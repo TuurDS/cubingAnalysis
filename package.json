@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "fs-extra": "^10.0.1",
     "string-format-js": "^0.1.9"
