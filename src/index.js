@@ -32,19 +32,32 @@ fs.readFile("./src/input.txt", 'utf-8', (err, data) => {
         return true;
     })
 
-    //-- INPUT VARIABLES --//
+    //-- START --//
+    //-- START --//
+    //-- START --//
+
     // use "oldest" or "newest" keyword or number as the position to start/end with
 
-    //example 1 getting the last 1000 lines
+    // example 1 getting the last 1000 lines
     // var start = "newest - 1000";
     // var end = "newest";
+
+    // example 2 getting line 2000 to 3000
+    // var start = 2000;
+    // var end = 3000;
+
+    // explanation array is 4876 lines long
+    // oldest will be the first line or index 0
+    // newest will be the last line or index 4875
 
     var start = "oldest";
     var end = "newest";
     let subX = 10;
     const limit = 10000;
 
-    //-- INPUT VARIABLES --//
+    //-- END --//
+    //-- END --//
+    //-- END --//
 
 
     start = start.replaceAll("oldest", 0)
