@@ -1,8 +1,16 @@
 {
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/analyseSingle.js",
+    "sessions": "node src/analyseSessions.js",
+    "sessions:cross": "node src/analyseCrossSessions.js",
+    "export": "npm run export:sessions && npm run export:cross",
+    "export:sessions": "node src/export.js",
+    "export:cross": "node src/export_cross.js"
   },
   "dependencies": {
+    "chart.js": "^3.9.1",
+    "chartjs-node-canvas": "^4.1.6",
+    "chartjs-plugin-trendline": "^2.0.0",
     "fs-extra": "^10.0.1",
     "string-format-js": "^0.1.9"
   }
