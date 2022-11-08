@@ -23,7 +23,7 @@ fs.readFile("./src/currentData/csTimerExport.json", 'utf-8', (err, data) => {
             let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
             let month = date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth();
             let year = date.getFullYear();
-            let sessionFileName = year + "_" + month + "_" + day + "_size" + sessionLength + ".json";
+            let sessionFileName = year + "_" + month + "_" + day + "_size" + sessionLength;
 
             //covert the object to {
             // "time": 12.27,
