@@ -1,8 +1,8 @@
 const fs = require("fs-extra");
 
-//aggregate all the date from the sessionstest folder into one file in cross-sessionsExport.json
+//aggregate all the date from the sessions folder into one file in cross-sessionsExport.json
 //get all the files in the folder
-let files = fs.readdirSync("./src/DataHistory/sessions");
+let files = fs.readdirSync("./src/Data/sessions");
 //create an array to store all the data
 let data = [];
 //loop through all the files
@@ -10,7 +10,7 @@ for (let i = 0; i < files.length; i++) {
     //get the current file
     let file = files[i];
     //read the file
-    let fileData = fs.readFileSync(`./src/DataHistory/sessions/${file}`, 'utf-8');
+    let fileData = fs.readFileSync(`./src/Data/sessions/${file}`, 'utf-8');
     //parse the file
     fileData = JSON.parse(fileData);
     //add every solve of the filData to the data array
@@ -32,6 +32,6 @@ let sessionFileName = year + "_" + month + "_" + day + "_size" + sessionLength +
 
 
 //write the data to the cross-sessionsExport.json file
-fs.writeFile(`./src/DataHistory/cross-sessionsExports/${sessionFileName}`, JSON.stringify(data, null, 4), (err) => {
+fs.writeFile(`./src/Data/cross-sessionsExports/${sessionFileName}`, JSON.stringify(data, null, 4), (err) => {
     if (err) throw err;
 });

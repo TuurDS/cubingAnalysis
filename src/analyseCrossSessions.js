@@ -18,9 +18,9 @@ const analyseDataWrap = (chunksize) => {
 
     //read the latest export in the cross-sessionsExports directory
     //the date is the first 10 characters of the file name
-    let files = fs.readdirSync("./src/DataHistory/cross-sessionsExports");
+    let files = fs.readdirSync("./src/Data/cross-sessionsExports");
     let latestFile = files[files.length - 1];
-    let crossData = fs.readFileSync(`./src/DataHistory/cross-sessionsExports/${latestFile}`, { encoding: 'utf-8' });
+    let crossData = fs.readFileSync(`./src/Data/cross-sessionsExports/${latestFile}`, { encoding: 'utf-8' });
 
     const ChunkedData = chunks(JSON.parse(crossData), chunksize);
 
@@ -87,11 +87,11 @@ const exportBothGraphs = async (resultArray, chunksize) => {
 
     //create a folder named after the chunksize
     //if it doesn't exist
-    if (!fs.existsSync(`./src/DataHistory/graphs/cross-sessions/${chunksize}`)) {
-        fs.mkdirSync(`./src/DataHistory/graphs/cross-sessions/${chunksize}`);
+    if (!fs.existsSync(`./src/Data/graphs/cross-sessions/${chunksize}`)) {
+        fs.mkdirSync(`./src/Data/graphs/cross-sessions/${chunksize}`);
     }
-    fs.writeFileSync(`./src/DataHistory/graphs/cross-sessions/${chunksize}/SubXPercent.png`, imageSubXPercent);
-    fs.writeFileSync(`./src/DataHistory/graphs/cross-sessions/${chunksize}/AvrTime.png`, imageAvrTime);
+    fs.writeFileSync(`./src/Data/graphs/cross-sessions/${chunksize}/SubXPercent.png`, imageSubXPercent);
+    fs.writeFileSync(`./src/Data/graphs/cross-sessions/${chunksize}/AvrTime.png`, imageAvrTime);
 };
 
 
@@ -111,7 +111,7 @@ const chunksizes = {
     "chunks of 1000": 1000
 }
 
-fs.emptyDirSync("./src/DataHistory/graphs/cross-sessions");
+fs.emptyDirSync("./src/Data/graphs/cross-sessions");
 
 for (const chunksize in chunksizes) {
     const result = analyseDataWrap(chunksizes[chunksize]);

@@ -7,7 +7,7 @@ const analyseDataWrap = (startPercentage, files) => {
     let sessionResults = [];
 
     for (let i = 0; i < files.length; i++) {
-        let data = fs.readFileSync(`./src/DataHistory/sessions/${files[i]}`, { encoding: 'utf-8' });
+        let data = fs.readFileSync(`./src/Data/sessions/${files[i]}`, { encoding: 'utf-8' });
 
         //filter data with length less than X
         if (JSON.parse(data).length < 10) continue;
@@ -29,7 +29,7 @@ const analyseDataWrap = (startPercentage, files) => {
 }
 
 //read every file in the session folder and loop through them
-let files = fs.readdirSync("./src/DataHistory/sessions");
+let files = fs.readdirSync("./src/Data/sessions");
 
 const percentages = {
     "0%": 0,
@@ -116,6 +116,6 @@ const chartJSNodeCanvas = new ChartJSNodeCanvas({
     const imageSubXPercent = await chartJSNodeCanvas.renderToBuffer(configurationSubXPercent);
     const imageAvrTime = await chartJSNodeCanvas.renderToBuffer(configurationAvrTime);
 
-    fs.writeFileSync('./src/DataHistory/graphs/sessions/SubXPercent.png', imageSubXPercent);
-    fs.writeFileSync('./src/DataHistory/graphs/sessions/AvrTime.png', imageAvrTime);
+    fs.writeFileSync('./src/Data/graphs/sessions/SubXPercent.png', imageSubXPercent);
+    fs.writeFileSync('./src/Data/graphs/sessions/AvrTime.png', imageAvrTime);
 })();

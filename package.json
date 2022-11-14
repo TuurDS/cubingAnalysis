@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "start": "node src/analyseSingle.js",
-    "sessions": "node src/analyseSessions.js",
-    "sessions:cross": "node src/analyseCrossSessions.js",
+    "ana": "node src/analyseSingle.js",
+    "ana:sessions": "node src/analyseSessions.js",
+    "ana:cross": "node src/analyseCrossSessions.js",
     "export": "npm run export:sessions && npm run export:cross",
     "export:sessions": "node src/export.js",
     "export:cross": "node src/export_cross.js"
