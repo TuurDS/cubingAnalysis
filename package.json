@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "update":"npm run export && npm run ana:sessions && npm run ana:cross",
     "ana": "node src/analyseSingle.js",
     "ana:sessions": "node src/analyseSessions.js",
     "ana:cross": "node src/analyseCrossSessions.js",
