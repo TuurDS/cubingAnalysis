@@ -25,20 +25,22 @@ const analyseDataWrap = (chunksize) => {
     const ChunkedData = chunks(JSON.parse(crossData), chunksize);
 
     for (let i = 0; i < ChunkedData.length; i++) {
-        let data = JSON.stringify(ChunkedData[i]);
+        let data = ChunkedData[i];
 
         //filter data with length less than X
-        if (JSON.parse(data).length < 10) continue;
+        if (data.length < 10) continue;
 
         //must be a string
         const input = {
             data: data,
             start: "0",
             end: "0",
+            subX: process.env.npm_config_subx,
+            limit: process.env.npm_config_limit
         }
         const result = analyseData(input);
         sessionResults.push(result);
-        logSingleSession({ session: `${currentSession} \x1b[36mchunks of \x1b[33m${chunksize}`, ...result });
+        logSingleSession({ session: `\x1b[32mchunk \x1b[33m${currentSession} \x1b[36mchunks of \x1b[33m${chunksize}`, ...result });
         currentSession++;
     }
     return sessionResults;

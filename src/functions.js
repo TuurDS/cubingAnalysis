@@ -41,7 +41,7 @@ const analyseData = ({ data, start, end, subX, limit }) => {
 
     starttime = performance.now();
 
-    let arr = JSON.parse(data);
+    let arr = data;
 
     arr = arr.filter((value) => {
         if (isNaN(value.time)) return false;
@@ -164,7 +164,6 @@ const logSingleResults = ({
     console.log(
         "\x1b[32mTotal analysed: \x1b[33m" + amtAnalysed +
         "\x1b[36m Avg: \x1b[31m" + avrTime);
-    console.log();
     console.log(
         `\x1b[32msub ${subX} solves: \x1b[33m` + AmountBeforesubXArr.length +
         `\x1b[36m sub ${subX}%: \x1b[31m${subXPercent}%`);
@@ -179,9 +178,14 @@ const logSingleResults = ({
         console.log();
         findDuplicates("\x1b[32mdiviation:\x1b[33m", AmountBeforesubXArr);
     }
-
+    
     console.log();
-    console.log("\x1b[32mexecution time: \x1b[33m" + (endtime - starttime) + " ms");
+    
+    var toggle_timing = process.env.npm_config_time;
+    if (toggle_timing && !!parseInt(toggle_timing)) {
+        console.log("\x1b[32mexecution time: \x1b[33m" + (endtime - starttime) + " ms");
+        console.log();
+    }
 }
 
 const logSingleSession = ({
@@ -204,32 +208,27 @@ const logSingleSession = ({
     starttime,
     endtime
 }) => {
-    console.log("\x1b[35mSession: \x1b[33m" + session);
-    console.log(
-        "\x1b[32mSolves: \x1b[33m" + amtSolves +
-        "\x1b[32m Start: \x1b[33m" + start +
-        "\x1b[32m End: \x1b[33m" + end +
-        "\x1b[32m SubX: \x1b[33m" + subX +
-        "\x1b[32m Limit: \x1b[33m" + limit);
-    console.log(
-        "\x1b[32mTotal analysed: \x1b[33m" + amtAnalysed +
-        "\x1b[36m Avg: \x1b[31m" + avrTime);
-    console.log(
-        `\x1b[32msub ${subX} solves: \x1b[33m` + AmountBeforesubXArr.length +
-        `\x1b[36m sub ${subX}%: \x1b[31m${subXPercent}%`);
-    console.log(
-        "\x1b[32mMin: \x1b[33m" + minAmountBeforeSubX +
-        "\x1b[32m Max: \x1b[33m" + maxAmountBeforeSubX +
-        "\x1b[32m avr: \x1b[33m" + avrAmountBeforeSubX +
-        "\x1b[32m median: \x1b[33m" + medianAmountBeforeSubX);
+    console.log("\x1b[33m" + session);
 
-    var toggle_deviation = process.env.npm_config_devi;
-    if (toggle_deviation && !!parseInt(toggle_deviation)) {
-        console.log();
-        findDuplicates("\x1b[32mdiviation:\x1b[33m", AmountBeforesubXArr);
-    }
-
-    console.log();
+    logSingleResults({
+        amtSolves,
+        amtAnalysed,
+        AmountBeforesubXArr,
+        totalTime,
+        avrTime,
+        minAmountBeforeSubX,
+        maxAmountBeforeSubX,
+        currentAmountAfterSubX,
+        avrAmountBeforeSubX,
+        medianAmountBeforeSubX,
+        start,
+        end,
+        subX,
+        subXPercent,
+        limit,
+        starttime,
+        endtime
+    });
 }
 
 module.exports = {

@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "update":"npm run export && npm run ana:sessions && npm run ana:cross",
+    "update": "npm run export && npm run ana:sessions && npm run ana:cross && npm run ana:date",
     "ana": "node src/analyseSingle.js",
+    "ana:date": "node src/analyseDate.js",
     "ana:sessions": "node src/analyseSessions.js",
     "ana:cross": "node src/analyseCrossSessions.js",
     "export": "npm run export:sessions && npm run export:cross",
@@ -13,6 +14,7 @@
     "chartjs-node-canvas": "^4.1.6",
     "chartjs-plugin-trendline": "^2.0.0",
     "fs-extra": "^10.0.1",
+    "moment": "^2.29.4",
     "string-format-js": "^0.1.9"
   }
 }

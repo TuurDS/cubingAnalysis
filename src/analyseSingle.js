@@ -4,7 +4,7 @@ const { analyseData, logSingleResults } = require("./functions.js");
 
 fs.readFile("./src/currentData/input.json", 'utf-8', (err, data) => {
     const input = {
-        data: data,
+        data: JSON.parse(data),
         start: process.env.npm_config_start,
         end: process.env.npm_config_end,
         subX: process.env.npm_config_subx,

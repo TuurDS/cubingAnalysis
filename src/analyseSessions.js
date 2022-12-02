@@ -7,22 +7,24 @@ const analyseDataWrap = (startPercentage, files) => {
     let sessionResults = [];
 
     for (let i = 0; i < files.length; i++) {
-        let data = fs.readFileSync(`./src/Data/sessions/${files[i]}`, { encoding: 'utf-8' });
+        let data = JSON.parse(fs.readFileSync(`./src/Data/sessions/${files[i]}`, { encoding: 'utf-8' }));
 
         //filter data with length less than X
-        if (JSON.parse(data).length < 10) continue;
+        if (data.length < 10) continue;
 
-        let start = Math.floor(JSON.parse(data).length * startPercentage);
+        let start = Math.floor(data.length * startPercentage);
         let end = -start;
         //must be a string
         const input = {
             data: data,
             start: start.toString(),
             end: end.toString(),
+            subX: process.env.npm_config_subx,
+            limit: process.env.npm_config_limit
         }
         const result = analyseData(input);
         sessionResults.push(result);
-        logSingleSession({ session: `${currentSession} \x1b[36mremoved \x1b[33m${startPercentage * 100}%`, ...result });
+        logSingleSession({ session: `\x1b[32msession \x1b[33m${currentSession} \x1b[36mremoved \x1b[33m${startPercentage * 100}%`, ...result });
         currentSession++;
     }
     return sessionResults;

@@ -35,3 +35,8 @@ let sessionFileName = year + "_" + month + "_" + day + "_size" + sessionLength +
 fs.writeFile(`./src/Data/cross-sessionsExports/${sessionFileName}`, JSON.stringify(data, null, 4), (err) => {
     if (err) throw err;
 });
+
+//write the date file to the .src/currentData/input.json file
+fs.writeFile("./src/currentData/input.json", JSON.stringify(data, null, 4), (err) => {
+    if (err) throw err;
+});
