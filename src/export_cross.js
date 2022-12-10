@@ -28,7 +28,7 @@ let date = new Date();
 let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
 let month = date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth();
 let year = date.getFullYear();
-let sessionFileName = year + "_" + month + "_" + day + "_size" + sessionLength + ".json";
+let sessionFileName = year + "_" + (month + 1) + "_" + day + "_size" + sessionLength + ".json";
 
 
 //write the data to the cross-sessionsExport.json file

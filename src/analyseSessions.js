@@ -48,7 +48,7 @@ for (const percentage in percentages) {
 const { ChartJSNodeCanvas } = require('chartjs-node-canvas');
 
 const chartJSNodeCanvas = new ChartJSNodeCanvas({
-    width: 800, height: 600, plugins: {
+    width: 1200, height: 600, plugins: {
         modern: ['chartjs-plugin-trendline'],
     }
 });

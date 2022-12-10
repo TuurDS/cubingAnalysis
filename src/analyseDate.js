@@ -25,24 +25,28 @@ data.sort((a, b) => {
 function getFirstAndLastDayOfWeek(date) {
     let firstday = moment.utc(date).startOf('isoWeek').format("YYYY-MM-DD");
     let lastday = moment.utc(date).endOf('isoWeek').format("YYYY-MM-DD");
-    return { firstday, lastday, label:firstday, labelLarge:`\x1b[33m${firstday}\x1b[36m | week` };
+    return { firstday, lastday, label: firstday, labelLarge: `\x1b[33m${firstday}\x1b[36m | week` };
 }
 
 function getFirstAndLastDayOfMonth(date) {
     let firstday = moment.utc(date).startOf('month').format("YYYY-MM-DD");
     let lastday = moment.utc(date).endOf('month').format("YYYY-MM-DD");
-    return { firstday, lastday, label:moment.utc(date).format("MMMM"), 
-    labelLarge:`\x1b[33m${moment.utc(date).format("MMMM")}\x1b[36m | month` };
+    return {
+        firstday, lastday, label: moment.utc(date).format("MMMM"),
+        labelLarge: `\x1b[33m${moment.utc(date).format("MMMM")}\x1b[36m | month`
+    };
 }
 
 function getFirstAndLastDayOfYear(date) {
     let firstday = moment.utc(date).startOf('year').format("YYYY-MM-DD");
     let lastday = moment.utc(date).endOf('year').format("YYYY-MM-DD");
-    return { firstday, lastday, label:moment.utc(date).format("YYYY"), 
-    labelLarge:`\x1b[33m${moment.utc(date).format("YYYY")}\x1b[36m | year` };
+    return {
+        firstday, lastday, label: moment.utc(date).format("YYYY"),
+        labelLarge: `\x1b[33m${moment.utc(date).format("YYYY")}\x1b[36m | year`
+    };
 }
 
-function getFirstAndLastDayOfEveryPeriod(date,startday,days) {
+function getFirstAndLastDayOfEveryPeriod(date, startday, days) {
     //startday is the first day of the entire data
     startday = moment.utc(startday).format("YYYY-MM-DD");
     //find between wich 2 multiples of the amount of days days from the first day of the entire data the date is
@@ -50,8 +54,10 @@ function getFirstAndLastDayOfEveryPeriod(date,startday,days) {
     let weeks = Math.floor(diff / days);
     let firstday = moment.utc(startday).add(weeks * days, 'days').format("YYYY-MM-DD");
     let lastday = moment.utc(startday).add((weeks + 1) * days, 'days').endOf('day').format("YYYY-MM-DD");
-    return { firstday, lastday, label:`${firstday} - ${lastday}`,
-    labelLarge: `\x1b[33m${firstday} \x1b[32m- \x1b[33m${lastday}\x1b[36m | ${days} days` };
+    return {
+        firstday, lastday, label: `${firstday} - ${lastday}`,
+        labelLarge: `\x1b[33m${firstday} \x1b[32m- \x1b[33m${lastday}\x1b[36m | ${days} days`
+    };
 }
 
 
@@ -71,33 +77,33 @@ function divideIntoPeriods(data, period, days = 7) {
     const periodFunc = getPeriodFunc(period);
 
     //first day of entire data cannot use periodFunc
-    let firstDay = moment.utc(data[0].date*1000).format("YYYY-MM-DD");
+    let firstDay = moment.utc(data[0].date * 1000).format("YYYY-MM-DD");
 
     let periods = [];
     let periodData = [];
-    let { firstday: firstDayOfPeriod, lastday: lastDayOfPeriod, label, labelLarge } = periodFunc(data[0].date*1000,firstDay,days);
+    let { firstday: firstDayOfPeriod, lastday: lastDayOfPeriod, label, labelLarge } = periodFunc(data[0].date * 1000, firstDay, days);
 
     for (let i = 0; i < data.length; i++) {
-        if (periodFunc(data[i].date*1000,firstDay,days).firstday === firstDayOfPeriod) {
+        if (periodFunc(data[i].date * 1000, firstDay, days).firstday === firstDayOfPeriod) {
             periodData.push(data[i]);
         }
         else {
-            periods.push({ date: firstDayOfPeriod, data: periodData, lastday:lastDayOfPeriod, label, labelLarge });
+            periods.push({ date: firstDayOfPeriod, data: periodData, lastday: lastDayOfPeriod, label, labelLarge });
             periodData = [];
             periodData.push(data[i]);
-            ({ firstday: firstDayOfPeriod, lastday: lastDayOfPeriod, label, labelLarge } = periodFunc(data[i].date*1000,firstDay,days));
+            ({ firstday: firstDayOfPeriod, lastday: lastDayOfPeriod, label, labelLarge } = periodFunc(data[i].date * 1000, firstDay, days));
         }
     }
-    periods.push({ date: firstDayOfPeriod, data: periodData, lastday:lastDayOfPeriod, label, labelLarge });
+    periods.push({ date: firstDayOfPeriod, data: periodData, lastday: lastDayOfPeriod, label, labelLarge });
     return periods;
 }
 
-function analyseDataWrap (period) {
+function analyseDataWrap(period) {
     let data = period.data;
     let label = period.label;
 
     var results = [];
-    for(let i = 0; i < data.length; i++){
+    for (let i = 0; i < data.length; i++) {
         let week = data[i];
 
         const input = {
@@ -109,17 +115,17 @@ function analyseDataWrap (period) {
         }
 
         let weekAnalysis = analyseData(input);
-        results.push({label:week.label, ...weekAnalysis});
+        results.push({ label: week.label, ...weekAnalysis });
         logSingleSession({ session: week.label, ...weekAnalysis });
     }
-    return {label,results};
+    return { label, results };
 }
 
 
 const { ChartJSNodeCanvas } = require('chartjs-node-canvas');
 
 const chartJSNodeCanvas = new ChartJSNodeCanvas({
-    width: 800, height: 600, plugins: {
+    width: 1200, height: 600, plugins: {
         modern: ['chartjs-plugin-trendline'],
     }
 });
@@ -157,8 +163,8 @@ const show = async (result) => {
         }
     };
 
-   //add a dataset to the graph
-   configurationAvrTime.data.datasets.push({
+    //add a dataset to the graph
+    configurationAvrTime.data.datasets.push({
         label: result.label,
         data: result.results.map((result) => result.avrTime),
         fill: false,
@@ -188,16 +194,14 @@ const months = divideIntoPeriods(data, "month");
 const years = divideIntoPeriods(data, "year");
 
 const periods = [
-    {label:"weeks",data:weeks},
-    {label:"twoWeeks",data:twoWeeks},
-    {label:"months",data:months},
-    {label:"years",data:years},
+    { label: "weeks", data: weeks },
+    { label: "twoWeeks", data: twoWeeks },
+    { label: "months", data: months },
+    { label: "years", data: years },
 ]
 
-for(let i = 0; i < periods.length; i++){
+for (let i = 0; i < periods.length; i++) {
     let period = periods[i];
     let periodAnalysis = analyseDataWrap(period);
     show(periodAnalysis);
 }
-
-console.log("test");
