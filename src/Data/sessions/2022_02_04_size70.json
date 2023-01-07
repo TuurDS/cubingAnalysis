@@ -333,5 +333,20 @@
         "time": 12.58,
         "scramble": "R2 U' R2 B2 D F2 D2 R2 F2 U L2 R2 F L D' L' B' L' B' F' R D2",
         "date": "1646420502"
+    },
+    {
+        "time": 10.39,
+        "scramble": "D' F' U2 L F U' B' U L2 U2 B' U2 R2 B2 L2 F R2 D2 F U'",
+        "date": 1671883745
+    },
+    {
+        "time": 12.09,
+        "scramble": "D B U D2 L' U R D' F2 D2 B' R2 F2 B R2 L2 B' D2 R2 F",
+        "date": 1671883766
+    },
+    {
+        "time": 11.68,
+        "scramble": "R2 D2 R B2 L' F2 L2 F2 U2 B2 D2 R D' B R2 U' L2 R B2 D'",
+        "date": 1671883795
     }
 ]
