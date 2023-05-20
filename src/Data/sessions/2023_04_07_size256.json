@@ -1,0 +1,1282 @@
+[
+    {
+        "time": 9.39,
+        "scramble": "F' L2 D2 R' B D R U B' U R2 D R2 B2 D' R2 U' B2 R2 F2 L2",
+        "date": 1683462962
+    },
+    {
+        "time": 9.82,
+        "scramble": "F B L' D' B2 R U B U2 B' U2 F' U2 F2 U2 D2 F' R B2",
+        "date": 1683462981
+    },
+    {
+        "time": 9.34,
+        "scramble": "D F2 U' L2 F2 U' B2 D2 L2 F2 D R B L D2 F R B2 R2 F U",
+        "date": 1683463001
+    },
+    {
+        "time": 12.88,
+        "scramble": "F' L2 B' L U' F' U F B2 L2 F D2 B R2 F U2 B' D2 R'",
+        "date": 1683463029
+    },
+    {
+        "time": 8.8,
+        "scramble": "D2 B U2 L2 F' L2 F' U2 F' D2 B2 R' D' L R U L F L2 R'",
+        "date": 1683463050
+    },
+    {
+        "time": 9.74,
+        "scramble": "U2 R D2 R2 F2 L' B2 R2 B2 F' R D2 F2 U' F' L' R2 F2",
+        "date": 1683463142
+    },
+    {
+        "time": 13.2,
+        "scramble": "U2 B2 U' L2 D' U' L2 B2 U B2 U B' R' F' D' B' F' R' B2 U2",
+        "date": 1683463168
+    },
+    {
+        "time": 10.94,
+        "scramble": "R' D B2 U2 R2 B2 L2 R2 U2 F L F D2 L2 U' L D",
+        "date": 1683463190
+    },
+    {
+        "time": 10.14,
+        "scramble": "B2 U' L D2 R2 B R2 U F' R B2 U2 L U2 B2 U2 B2 R D2 L' D2",
+        "date": 1683463213
+    },
+    {
+        "time": 11.56,
+        "scramble": "B U2 R' U L2 R2 U' B2 F2 R2 D' F' U F R F2 D F2",
+        "date": 1683463232
+    },
+    {
+        "time": 9.81,
+        "scramble": "U2 F' R2 D2 L F2 L D2 U2 B2 L B2 R2 B' R' D' B R2 F U' L'",
+        "date": 1683463254
+    },
+    {
+        "time": 10.95,
+        "scramble": "D' F2 R2 F' D2 B U F B2 D2 L2 F2 D2 R' L2 B2 D2 L' F2 B",
+        "date": 1683463272
+    },
+    {
+        "time": 8.14,
+        "scramble": "B' R D' F R' L2 D B2 U2 R B2 R' L2 D2 R2 U2 F2 D2 F2",
+        "date": 1683463409
+    },
+    {
+        "time": 11.5,
+        "scramble": "U' L U F2 U B2 L2 U R2 B2 D2 R2 B2 R' D R2 D' B' F U2",
+        "date": 1683463424
+    },
+    {
+        "time": 10.68,
+        "scramble": "B' F2 L2 D2 F2 D2 U2 L2 F' D' L B' R B' F D' R2",
+        "date": 1683463448
+    },
+    {
+        "time": 10.27,
+        "scramble": "U F' L' U F U' L' F L R2 U' B2 U2 B2 D' F2 L2 F2 D",
+        "date": 1683463469
+    },
+    {
+        "time": 10.42,
+        "scramble": "B' R L' F R2 D F2 R B' U2 R F2 B2 R' D2 B2 D2 L F2 L' F2",
+        "date": 1683463499
+    },
+    {
+        "time": 9.62,
+        "scramble": "L2 F2 U' R2 B2 U' F2 D2 L2 D' L2 F' U2 F2 U R D2 F L' R' F",
+        "date": 1683463519
+    },
+    {
+        "time": 9.4,
+        "scramble": "D R2 D2 B2 R2 B' L2 F L2 R2 B U2 F2 U F2 L F L D B' R",
+        "date": 1683463539
+    },
+    {
+        "time": 9.42,
+        "scramble": "F' D2 R' U F U2 F' D' B R2 D2 F2 R2 D2 F2 L D2 L' B2 R",
+        "date": 1683463607
+    },
+    {
+        "time": 10.52,
+        "scramble": "F D' R' D' R2 L D B2 R2 L2 U2 B L2 F R2 L2 B2 D2 U L",
+        "date": 1683463646
+    },
+    {
+        "time": 8.17,
+        "scramble": "B' U' R D2 F R L2 U' D2 B2 R2 U2 L' F2 L' B2 D2 B2 L' U'",
+        "date": 1683463666
+    },
+    {
+        "time": 12.19,
+        "scramble": "F D2 F U2 F' D2 L2 B' U2 L2 U L D L D2 F' U' F R'",
+        "date": 1683463684
+    },
+    {
+        "time": 10.74,
+        "scramble": "B D' L2 D2 R' D2 R B2 D2 L' R2 F2 R2 B' L U L2 B2 U'",
+        "date": 1683463770
+    },
+    {
+        "time": 12.43,
+        "scramble": "L D2 B2 R U2 R' F2 U2 F2 D2 L' R2 B' R' U' R D F2 U B L",
+        "date": 1683463799
+    },
+    {
+        "time": 10.52,
+        "scramble": "L2 B2 L2 R2 B' D2 L2 B2 F D2 L2 R' F2 D' R2 U2 R U R'",
+        "date": 1683463821
+    },
+    {
+        "time": 10.76,
+        "scramble": "R2 B2 D' U2 R2 B2 D U2 B2 U R B' D F2 U' R F' L B2 D2",
+        "date": 1683463850
+    },
+    {
+        "time": 11.8,
+        "scramble": "B D' F2 U' F B2 L D' B' R' U2 F2 D2 F2 R2 B2 R2 D2 L' B2 U'",
+        "date": 1683463877
+    },
+    {
+        "time": 10.14,
+        "scramble": "F' L2 D' B2 L2 F2 U2 B2 D R2 B2 U2 R' B2 F' R2 D F' U F2 U",
+        "date": 1683463898
+    },
+    {
+        "time": 10.11,
+        "scramble": "B L' B2 D2 L2 D2 L2 R B2 L' F2 U2 R' F R2 U2 L' D L2 D' R",
+        "date": 1683463921
+    },
+    {
+        "time": 10.73,
+        "scramble": "L D2 F' L' D R F' R2 U2 R' B2 U2 L' U2 B2 R' U2 B2 R U B'",
+        "date": 1683463942
+    },
+    {
+        "time": 11.67,
+        "scramble": "L D B' D2 L U' L' B' R' B2 D2 L2 D2 L' U2 B2 R B2 L",
+        "date": 1683463970
+    },
+    {
+        "time": 10.87,
+        "scramble": "B2 U' B2 R2 D' B2 U R2 U' L2 D2 U' R D U L2 U' F L2 D'",
+        "date": 1683463997
+    },
+    {
+        "time": 9.56,
+        "scramble": "L' F' B' U2 R' U B' L B2 R2 F2 R2 D2 R2 D R2 B2 D2 R",
+        "date": 1683464018
+    },
+    {
+        "time": 11.4,
+        "scramble": "L2 U L2 B U B R D B' U2 L2 D2 R2 B R2 L2 B' R2 B2 U2",
+        "date": 1683464063
+    },
+    {
+        "time": 9.32,
+        "scramble": "R2 B U2 B2 L2 R2 U2 R2 B' R2 U2 D L B L B2 D R' B U B2",
+        "date": 1683464146
+    },
+    {
+        "time": 10.1,
+        "scramble": "U2 R2 U' B2 L' D B' F2 L F2 D2 R' B2 D2 L' B2 R B2 R F",
+        "date": 1683464164
+    },
+    {
+        "time": 11.06,
+        "scramble": "D2 R2 D2 F2 L2 B2 F U2 F' L2 F2 R F D' R' F2 U' B' F2 R2 B2",
+        "date": 1683464185
+    },
+    {
+        "time": 10.35,
+        "scramble": "D' R2 B2 L' U2 L F2 R' D2 R' B2 U L' R B L2 D F' U2",
+        "date": 1683464264
+    },
+    {
+        "time": 8.19,
+        "scramble": "L U' R U F' D B U2 R2 L2 U' R2 F2 D L2 U' F2 U F R'",
+        "date": 1683464282
+    },
+    {
+        "time": 9.64,
+        "scramble": "D L D2 U' F2 D' R2 B2 F2 D' L2 F2 L2 D' R' D2 B' L D2 L U",
+        "date": 1683464311
+    },
+    {
+        "time": 9.44,
+        "scramble": "R' U R L B' U' D' F2 L2 D2 B U2 L2 F L2 F' U2 B U'",
+        "date": 1683464336
+    },
+    {
+        "time": 11.03,
+        "scramble": "B U F2 U' L2 U B2 D2 B2 U L F2 R B' D U B' U2 R",
+        "date": 1683464357
+    },
+    {
+        "time": 11.16,
+        "scramble": "D L' R2 U2 F2 D' B2 U F2 R2 U' L2 U2 B' F' D' R D' L2 R2",
+        "date": 1683464376
+    },
+    {
+        "time": 9.13,
+        "scramble": "F R' F' U2 R2 D2 U B2 D' L2 B2 F L F' U' B'",
+        "date": 1683464421
+    },
+    {
+        "time": 11.38,
+        "scramble": "R2 U B2 D L2 U2 R2 F2 U F2 L' D' L2 D2 F U' B U' R F2",
+        "date": 1683464450
+    },
+    {
+        "time": 11.95,
+        "scramble": "B' U2 B2 U B2 U L2 D' B2 U B2 R' U B' D B' L U2 F' D'",
+        "date": 1683464474
+    },
+    {
+        "time": 9.46,
+        "scramble": "R2 B' L' B U' L U D' B' D2 R' F2 R U2 B2 L2 F2 U2 R'",
+        "date": 1683464521
+    },
+    {
+        "time": 10.15,
+        "scramble": "B2 R2 U L2 D R2 B2 F2 U2 F2 U' R' D R2 D F' U L2 D2 L'",
+        "date": 1683464543
+    },
+    {
+        "time": 11.03,
+        "scramble": "R2 B' D' R2 D2 B2 L2 R2 U' F2 D' L' D' B2 D2 L' F' L' D",
+        "date": 1683464561
+    },
+    {
+        "time": 9.78,
+        "scramble": "D' B' F2 R' B2 U2 R2 U2 R' F2 D2 L D' R2 U' B U2 R' D'",
+        "date": 1683464630
+    },
+    {
+        "time": 10.91,
+        "scramble": "L2 U' B2 U' F2 U2 L2 U' R2 U' F2 U B R' F L U2 R2 B2 D B2",
+        "date": 1683464654
+    },
+    {
+        "time": 11.63,
+        "scramble": "F2 U2 R2 B' U2 R2 B R2 D2 R2 U2 F D' L' F2 L F' R B D' U'",
+        "date": 1683464677
+    },
+    {
+        "time": 10,
+        "scramble": "D L2 F2 L' D2 U2 R' F2 R' F2 R' D R B2 L' B D L R",
+        "date": 1683464716
+    },
+    {
+        "time": 9.92,
+        "scramble": "F U L' R2 B2 D2 U' L2 U F2 U2 B2 U R2 F D2 L F L2 R F",
+        "date": 1683464744
+    },
+    {
+        "time": 8.12,
+        "scramble": "U' D' F R U2 R' D' B' L2 D R2 D' L2 U B2 U' L2 U' F2 L'",
+        "date": 1683464763
+    },
+    {
+        "time": 13.45,
+        "scramble": "U2 F' D2 B2 R2 F U2 F L2 F2 L2 R2 U' B2 F2 U2 F' L F2 D'",
+        "date": 1683464782
+    },
+    {
+        "time": 9.23,
+        "scramble": "L2 B2 L2 B2 D' R2 B2 D F2 D2 U2 R U' F' L2 R F2 L' F D",
+        "date": 1683464901
+    },
+    {
+        "time": 10.14,
+        "scramble": "U' L' F2 D2 R F2 D2 R' U2 L2 B2 U' R' U' R2 B R' U' F U",
+        "date": 1683464918
+    },
+    {
+        "time": 10.46,
+        "scramble": "F' L U F' D' B2 R' L2 U2 R2 L2 F R2 F U2 R2 B U2 F U L'",
+        "date": 1683465328
+    },
+    {
+        "time": 11.61,
+        "scramble": "L' D' L B2 R F2 R' F2 U2 L' R' B2 R' B2 F L B L' F U' F'",
+        "date": 1683465348
+    },
+    {
+        "time": 10.71,
+        "scramble": "B2 F' L2 F D2 F' D2 U2 R2 D2 F U L' R B2 U' F' L2 B2",
+        "date": 1683465368
+    },
+    {
+        "time": 11.34,
+        "scramble": "B2 L2 D2 R2 D2 B U' R' L2 D U2 F U2 F2 U2 B' U2 R2 F R2 D2",
+        "date": 1683465388
+    },
+    {
+        "time": 11.5,
+        "scramble": "D F2 D B2 F2 D2 R2 U2 R2 B2 F' D2 R' U2 F' L' F2 R' F' U",
+        "date": 1683465408
+    },
+    {
+        "time": 8.41,
+        "scramble": "L B2 D2 R2 U2 L' D2 B2 R D2 U F2 L' D B D B' D2 F",
+        "date": 1683465429
+    },
+    {
+        "time": 12.5,
+        "scramble": "L B' R L2 B U F' D F2 R' F2 R B2 L' F2 B2 D2 L F2 L' U",
+        "date": 1683465447
+    },
+    {
+        "time": 9.51,
+        "scramble": "D' R D2 F2 B U L' D2 B' D2 F B2 U2 R2 U2 F R2 F2 L2 U",
+        "date": 1683465471
+    },
+    {
+        "time": 9.57,
+        "scramble": "R' F2 U' L2 U B2 D2 B2 L2 F2 U F2 R2 L' B' R D R' B' D'",
+        "date": 1683465493
+    },
+    {
+        "time": 11.29,
+        "scramble": "R U2 B L' U R L F' D B2 U B2 D2 R2 L2 B2 U' R2 D R'",
+        "date": 1683465511
+    },
+    {
+        "time": 11.29,
+        "scramble": "R F2 D F2 D2 B2 U' L2 U2 F2 L2 U' F' D2 R' U' B' L F U2",
+        "date": 1683465584
+    },
+    {
+        "time": 9.85,
+        "scramble": "D L2 F2 L2 U' R2 F2 D' L2 F2 D2 B U' L R' U2 F2 D' F' D'",
+        "date": 1683465604
+    },
+    {
+        "time": 9.51,
+        "scramble": "D B2 L2 R2 D R2 D2 L2 D' R2 U' F L2 F2 U2 L F2 D' B D'",
+        "date": 1683465622
+    },
+    {
+        "time": 12.55,
+        "scramble": "B' U L' D2 B2 L F2 D2 R U2 L R2 B2 U2 D' F D2 F2 R' B' U",
+        "date": 1683465642
+    },
+    {
+        "time": 11.6,
+        "scramble": "F2 L U F D' R L' D2 B D' R2 F2 U2 B' L2 F L2 F U2 L2",
+        "date": 1683465663
+    },
+    {
+        "time": 9.71,
+        "scramble": "R' U L' F2 R2 U2 R U2 F2 U2 B2 R U2 D B D' F2 R2 F2 L2",
+        "date": 1683465718
+    },
+    {
+        "time": 10.57,
+        "scramble": "R2 D L' B' L2 F U' L U' R2 B L2 U2 D2 B2 D2 B' R2 F' D2 B'",
+        "date": 1683465739
+    },
+    {
+        "time": 10.94,
+        "scramble": "B' L F2 R2 D2 F' U2 B2 U2 L2 U2 F' D F2 L' R F R' D2",
+        "date": 1683465759
+    },
+    {
+        "time": 10.66,
+        "scramble": "R D2 F2 L' U2 R B2 L' R F2 U' L2 F R D U L U F",
+        "date": 1683465834
+    },
+    {
+        "time": 12.21,
+        "scramble": "F2 R2 U' F2 D' R2 D U2 R2 F2 L2 U' L' B L2 D2 F2 U' B2 L2 F2",
+        "date": 1683465857
+    },
+    {
+        "time": 12.14,
+        "scramble": "D2 R L' B' R2 B R D2 B' F2 U F2 D' L2 F2 D F2 D'",
+        "date": 1683465891
+    },
+    {
+        "time": 8.69,
+        "scramble": "F' R B2 R B2 D2 U2 R2 U2 R B2 D2 R B D B2 L R2 D F L2",
+        "date": 1683465912
+    },
+    {
+        "time": 10.16,
+        "scramble": "D2 F L2 F L2 U2 L2 U2 B F2 D' B U2 R' F2 L B' L2 B2",
+        "date": 1683465946
+    },
+    {
+        "time": 11.98,
+        "scramble": "B U L2 R2 D R2 F2 D U2 L2 B2 F U' B L' D' R F R'",
+        "date": 1683465965
+    },
+    {
+        "time": 11.94,
+        "scramble": "L2 R2 F2 D' F2 L2 B2 U R2 U L2 B R' D L F2 D' B' D2 R2",
+        "date": 1683465985
+    },
+    {
+        "time": 9.93,
+        "scramble": "U' L' B2 U B2 D2 L2 D B2 L2 B2 L2 R2 B' U' R2 B' D R B",
+        "date": 1683466026
+    },
+    {
+        "time": 14.21,
+        "scramble": "F2 D2 F2 U F2 U F2 L2 R2 D' L2 U' L' F2 R U B' L2 D B2 R2",
+        "date": 1683466045
+    },
+    {
+        "time": 12.27,
+        "scramble": "D L D2 F' L2 B' L2 R2 D2 F R2 F2 U2 L' U2 B D2 U B",
+        "date": 1683466068
+    },
+    {
+        "time": 9.58,
+        "scramble": "B2 F2 U2 R B2 R' B2 F2 L U L2 F' R2 D' B U B2 U2",
+        "date": 1683466090
+    },
+    {
+        "time": 8.52,
+        "scramble": "F2 D2 B2 U L2 R2 B2 D' B2 L2 U' F2 R' F' L D R2 D' R U' F",
+        "date": 1683466141
+    },
+    {
+        "time": 9.8,
+        "scramble": "B2 U2 B2 F2 L B2 L2 U2 B2 L R2 B' D2 B' U B' F2 D' R B",
+        "date": 1683466159
+    },
+    {
+        "time": 9.73,
+        "scramble": "F' L' B L F2 B2 R B2 D2 B2 D' L2 D2 F2 L2 U F2 U' B U'",
+        "date": 1683466177
+    },
+    {
+        "time": 9.73,
+        "scramble": "R F2 R F2 L2 D2 F2 U2 B2 L F' L R2 B U' R2 F L B",
+        "date": 1683466198
+    },
+    {
+        "time": 11.34,
+        "scramble": "F' B2 D2 R2 F2 R B2 L D2 F2 R2 U2 B2 U R B' D' B2 D L2 R",
+        "date": 1683471530
+    },
+    {
+        "time": 12.11,
+        "scramble": "B R' D2 B R2 D2 F2 R2 F U2 B D2 F2 L' U B2 R2 U2 R2 D2",
+        "date": 1683471553
+    },
+    {
+        "time": 11.53,
+        "scramble": "U2 B2 L R2 D2 U2 R' B2 L' F2 U2 R' D L D' F' R2 U' F' L'",
+        "date": 1683471575
+    },
+    {
+        "time": 8.49,
+        "scramble": "D R' D2 F' L U F' B2 L2 U2 F2 B2 R2 D' F2 B2 R2 U R",
+        "date": 1683471618
+    },
+    {
+        "time": 10.27,
+        "scramble": "B' F2 L2 F2 D2 B2 D2 U R2 D F2 D' L' B' F2 L U' B' D' R",
+        "date": 1683471636
+    },
+    {
+        "time": 13.12,
+        "scramble": "B2 R D2 B2 F2 L F2 D2 R U2 R' B' L F L2 B2 F2 R' U' F2",
+        "date": 1683471658
+    },
+    {
+        "time": 9.25,
+        "scramble": "U B D R F' L' F' L2 F2 B2 D2 R F2 D2 F2 D2 R' F2 R B'",
+        "date": 1683471701
+    },
+    {
+        "time": 9.62,
+        "scramble": "B2 R2 F L2 F' D2 U2 F' U2 F' U2 F' U' L2 R2 F L' B' F D2",
+        "date": 1683471720
+    },
+    {
+        "time": 9.82,
+        "scramble": "F2 L' B2 R2 F2 R D2 L' R2 U2 R' U2 D' F' D2 L' U' B' L2 F U",
+        "date": 1683471743
+    },
+    {
+        "time": 12.35,
+        "scramble": "F2 D2 B2 D R2 D2 L2 D F2 R2 U' L F U2 R' U B L R2 D",
+        "date": 1683471763
+    },
+    {
+        "time": 9.23,
+        "scramble": "F2 D L2 U2 L2 B2 D2 U' L2 D F2 U R' B' U2 B2 L2 D' R U F'",
+        "date": 1683471787
+    },
+    {
+        "time": 11.03,
+        "scramble": "D L2 U' F2 D2 F2 R2 F2 D' B2 D2 F2 R' U' B2 R B L' B' D F'",
+        "date": 1683471810
+    },
+    {
+        "time": 10.46,
+        "scramble": "U2 L B2 F2 L2 U2 B2 F2 L' B2 R D2 U' L' F R F' U B' L U'",
+        "date": 1683471849
+    },
+    {
+        "time": 8.93,
+        "scramble": "B2 U2 R2 F' R2 F D2 F' D2 R2 D' R' F2 D' U' R2 U' R U' L'",
+        "date": 1683471866
+    },
+    {
+        "time": 11.95,
+        "scramble": "D' F2 R B L2 D2 F L2 B U2 F U2 L2 R2 D F' U2 L' R U' L'",
+        "date": 1683471888
+    },
+    {
+        "time": 11.91,
+        "scramble": "B2 L2 F2 U B2 D2 U' L2 F2 D2 F2 R2 F' R' D' R2 F' L B2 D2 L2",
+        "date": 1683471917
+    },
+    {
+        "time": 10.49,
+        "scramble": "D R D2 B' R2 D2 F2 U2 R2 F D2 R2 L' B' F2 L2 U' R' F'",
+        "date": 1683471946
+    },
+    {
+        "time": 8.96,
+        "scramble": "F2 D B U' L U' R2 F L B2 R2 D F2 B2 D' L2 D L2 D' B2",
+        "date": 1683471971
+    },
+    {
+        "time": 10.05,
+        "scramble": "L2 B2 U2 F L2 B U2 B' R2 F D2 B D' F2 L U2 B' U2 L2 U'",
+        "date": 1683472034
+    },
+    {
+        "time": 9.66,
+        "scramble": "U D' R2 F B2 D2 R' U' F2 D2 F2 L' D2 R D2 L' U2 B2 L' F'",
+        "date": 1683472054
+    },
+    {
+        "time": 9.45,
+        "scramble": "B2 D2 L2 U2 L2 R D2 L' R' U B' F' D' L' U F R' U' R2",
+        "date": 1683472091
+    },
+    {
+        "time": 12.28,
+        "scramble": "L2 F' D2 B' D2 B D2 F U2 R2 F R' B2 F2 D' R F L' U' F2 L'",
+        "date": 1683472113
+    },
+    {
+        "time": 13.26,
+        "scramble": "U2 D2 L' D' R2 D F' L U2 L2 U F2 L2 D2 F2 U' F2 B2 R2",
+        "date": 1683472133
+    },
+    {
+        "time": 9.56,
+        "scramble": "L2 U B L U F' R D L U F2 R2 D' F2 B2 U B2 U2 R2 U'",
+        "date": 1683472154
+    },
+    {
+        "time": 10.27,
+        "scramble": "F R L' U L' B2 D' B R2 U F2 B2 R2 D L2 D F2 L2 D2 B' D'",
+        "date": 1683472175
+    },
+    {
+        "time": 10.85,
+        "scramble": "L B2 U F D2 R' B2 D L U2 B R2 D2 B' U2 B2 L2 B D2 B' L2",
+        "date": 1683472232
+    },
+    {
+        "time": 11.48,
+        "scramble": "B2 D2 L2 B' D2 F' L2 B2 R2 F L2 U2 D' F' L U B U F2 D' U'",
+        "date": 1683472256
+    },
+    {
+        "time": 11.94,
+        "scramble": "R' F' U' L' R2 U B2 U F2 U2 B2 R2 B2 F' D' U' L' F D2 R'",
+        "date": 1683472291
+    },
+    {
+        "time": 9.27,
+        "scramble": "F D2 L2 D2 U2 B2 U2 F U2 B' D2 B' R' D' F L2 R' D2 F' L U'",
+        "date": 1683472323
+    },
+    {
+        "time": 12.73,
+        "scramble": "U B D2 B2 L2 F R2 U2 L2 B' U2 D' F' R F' D U L B U'",
+        "date": 1683472357
+    },
+    {
+        "time": 10.49,
+        "scramble": "R B R F2 D' L2 D2 R2 B2 D2 U' R2 B2 U2 R' B L' D' U' R U'",
+        "date": 1683472392
+    },
+    {
+        "time": 10.2,
+        "scramble": "R' U F' D2 F L2 B R F2 L2 D F2 D2 R2 U L2 U' B2 D L'",
+        "date": 1683472433
+    },
+    {
+        "time": 8.9,
+        "scramble": "D' U2 B2 F2 L2 U2 B2 D' R2 F' D2 L' D' B' U B' L B R2 U'",
+        "date": 1683472451
+    },
+    {
+        "time": 12.44,
+        "scramble": "F' L2 F2 L2 D' R2 F2 R2 U2 F2 D2 F2 U' R' B' L R' B U' F D'",
+        "date": 1683472471
+    },
+    {
+        "time": 11.81,
+        "scramble": "L' D' F2 U' R2 U2 L2 F2 L2 D' B2 U2 F2 R B U' F U' L2 B",
+        "date": 1683472496
+    },
+    {
+        "time": 9.04,
+        "scramble": "R2 D' L2 U F2 U' L2 F2 U' R2 L' U R D' L B' R U F D'",
+        "date": 1683472519
+    },
+    {
+        "time": 9.72,
+        "scramble": "R2 D2 F2 U2 L' B2 L R2 D2 R2 U2 B' L' B F L2 D' F2 D2",
+        "date": 1683472537
+    },
+    {
+        "time": 10.51,
+        "scramble": "U2 F R2 B2 L2 B F2 R2 U2 R2 U2 F' R D F' L B2 L' R' D B2",
+        "date": 1683472559
+    },
+    {
+        "time": 9.01,
+        "scramble": "L U2 F2 R' F2 L2 D2 U2 L' U2 R2 B2 U L2 B' D' L U F R' U",
+        "date": 1683472579
+    },
+    {
+        "time": 9.67,
+        "scramble": "L2 B2 U' B2 U F2 R2 D' R2 D2 F' D B U F U2 R' U2 L F'",
+        "date": 1683472603
+    },
+    {
+        "time": 12.56,
+        "scramble": "R' L2 F2 L2 U' R2 D B2 U' L2 U R2 D' F L2 U B' D' F'",
+        "date": 1683472622
+    },
+    {
+        "time": 10.46,
+        "scramble": "L' B2 D2 B2 D2 R B2 L' D2 L' F2 R2 U' F L D R2 U' B2 D L2",
+        "date": 1683472646
+    },
+    {
+        "time": 11.6,
+        "scramble": "R U2 F2 L2 U2 R2 U2 F2 U2 B' L2 B F2 U' F L U' B2 R2 F R'",
+        "date": 1683472670
+    },
+    {
+        "time": 10.04,
+        "scramble": "L2 U' F2 U' L2 U' R2 U F2 R2 D' F2 R' D F' L B2 U F D L'",
+        "date": 1683472692
+    },
+    {
+        "time": 9.33,
+        "scramble": "R2 B2 U L2 F2 D' B2 U' B2 U' B D F2 U2 B' D' B R U",
+        "date": 1683472715
+    },
+    {
+        "time": 10.06,
+        "scramble": "L' D2 U L D2 F2 L2 B2 L' U2 R' B' D F D L' R2 U",
+        "date": 1683472736
+    },
+    {
+        "time": 8.98,
+        "scramble": "B2 R2 U2 D F B D R U2 R' B2 D2 R D2 R B2 D2 L2 F R2",
+        "date": 1683472754
+    },
+    {
+        "time": 12.54,
+        "scramble": "L2 F2 R2 U2 R2 U2 F U2 F2 U2 L2 F' U' R' U2 F U2 F' D B2 U",
+        "date": 1683472774
+    },
+    {
+        "time": 12.83,
+        "scramble": "D L F' R' D2 R U L F D F2 D L2 F2 B2 U' R2 U2 R2 D'",
+        "date": 1683472799
+    },
+    {
+        "time": 11.26,
+        "scramble": "U2 L B2 U2 L2 B2 U2 L' F2 L' U2 R' U B U2 R B L' B U2 B'",
+        "date": 1683472826
+    },
+    {
+        "time": 11.06,
+        "scramble": "U2 R2 D2 L2 B2 U2 B R2 B R' F D2 L2 U F' R B2 L U'",
+        "date": 1683472847
+    },
+    {
+        "time": 10.68,
+        "scramble": "D L' D2 R2 F' R' U B F2 U2 D2 R2 U2 L B2 L F2 D2 B2 U'",
+        "date": 1683472885
+    },
+    {
+        "time": 12.09,
+        "scramble": "B' U' D2 B' R2 D2 L' U' F' L2 B' R2 F R2 F R2 B D2 R2 L",
+        "date": 1683472921
+    },
+    {
+        "time": 10.96,
+        "scramble": "F D2 B' U2 R F U2 R2 D U2 R' B2 R2 D2 L' D2 R F2 L2 B2",
+        "date": 1683472991
+    },
+    {
+        "time": 8.29,
+        "scramble": "L2 F L2 B' R2 F' D2 L2 U2 L2 F' U F' R D L2 B' R' U2 L",
+        "date": 1683473017
+    },
+    {
+        "time": 10.85,
+        "scramble": "U' F2 D2 F2 R2 D2 U B2 U B2 L2 F' U L F' R' B2 D U R2",
+        "date": 1683473045
+    },
+    {
+        "time": 7.98,
+        "scramble": "B' U2 B L2 B2 D2 R2 F2 D2 F2 D2 R U' R' B R' F2 U R D2",
+        "date": 1683473081
+    },
+    {
+        "time": 10.48,
+        "scramble": "R2 U2 R2 U R2 D B2 F2 D U' B U L F D' B R F U2 L",
+        "date": 1683473099
+    },
+    {
+        "time": 10.16,
+        "scramble": "U F D R2 D2 B2 D2 F' D F2 B2 R D2 F2 R D2 R2 D2 R'",
+        "date": 1683473184
+    },
+    {
+        "time": 12.67,
+        "scramble": "R U2 L' R' D2 U2 L' F2 U2 R' U2 B D' B2 F D U' R B' L'",
+        "date": 1683473203
+    },
+    {
+        "time": 12.73,
+        "scramble": "U2 B R2 D2 R2 F' D2 F' U2 L2 F' U2 R' D2 U' F2 L' D R2 F' R",
+        "date": 1683473225
+    },
+    {
+        "time": 14.85,
+        "scramble": "L B' L D F' L2 F U' R2 F2 B2 U2 D2 R U2 R L' F2 D",
+        "date": 1683473260
+    },
+    {
+        "time": 9.02,
+        "scramble": "F2 U2 L U' B2 D R2 F2 L2 U' F2 U' L2 F' U B' L2 R2 D L",
+        "date": 1683473287
+    },
+    {
+        "time": 10.29,
+        "scramble": "R2 B' D B2 R' D2 F L D2 F R2 U2 F U2 B R2 U2 B R2",
+        "date": 1683473303
+    },
+    {
+        "time": 10.53,
+        "scramble": "L2 D2 B' D' B2 D B2 R2 F2 D2 F2 D F2 R' U' F D B2 R D2",
+        "date": 1683473323
+    },
+    {
+        "time": 13.5,
+        "scramble": "D2 F D2 F2 R F2 R' D2 B2 R2 B2 L2 R D U' L' D2 U' F L B'",
+        "date": 1683473343
+    },
+    {
+        "time": 9.78,
+        "scramble": "R D' R' F B D' F D2 B2 R F2 B2 U2 B2 R2 F2 L2 U'",
+        "date": 1683473453
+    },
+    {
+        "time": 10.28,
+        "scramble": "F U2 B D2 R2 B' D2 B' U2 L2 F2 D' B2 U' R' B L' B2 R2 U R",
+        "date": 1683473474
+    },
+    {
+        "time": 10.23,
+        "scramble": "D' L B2 R2 F' R2 D2 B' D2 R2 B2 R' F U R2 B L U",
+        "date": 1683473496
+    },
+    {
+        "time": 12.25,
+        "scramble": "U2 B U2 F L U F B U F2 U R2 F2 U D2 L2 U2 L2 B2 U' F'",
+        "date": 1683473591
+    },
+    {
+        "time": 10.73,
+        "scramble": "U2 F2 R L U L F D' B F2 D2 R2 D2 R' U2 L2 F2 R' F2 D2 L",
+        "date": 1683473616
+    },
+    {
+        "time": 11.36,
+        "scramble": "F R2 U' L D' L' D F2 L' U2 R' D2 L B2 L' D2 L B",
+        "date": 1683473635
+    },
+    {
+        "time": 10.19,
+        "scramble": "B L D' B L2 U R B R2 L2 B2 D2 B D2 F' L2 B2 U2 D' R",
+        "date": 1683473658
+    },
+    {
+        "time": 9.45,
+        "scramble": "L F2 R D2 R B2 F2 L B2 L B2 R2 U' F' D B' D F R B' R2",
+        "date": 1683473682
+    },
+    {
+        "time": 12.47,
+        "scramble": "D F' L2 F' R2 B' L' D R F2 R2 L2 F L2 U2 F L2 F2 U2 D2",
+        "date": 1683473703
+    },
+    {
+        "time": 12.04,
+        "scramble": "L' B2 R2 F2 U B2 R2 D2 U R2 F2 U' B U L D' L' B2 L' F' U2",
+        "date": 1683473726
+    },
+    {
+        "time": 10.48,
+        "scramble": "B D2 B2 L2 U2 F L2 R2 D2 F D2 L' R B' D2 U L' F",
+        "date": 1683473746
+    },
+    {
+        "time": 11.21,
+        "scramble": "D2 F2 D B2 D L2 U' R2 B2 U2 R2 B' R F D2 R2 F' R' D L",
+        "date": 1683473770
+    },
+    {
+        "time": 11.13,
+        "scramble": "D2 B' R2 F L2 F U2 R2 D2 B' U2 D L' B2 R' B2 U2 R' B' L2",
+        "date": 1683473801
+    },
+    {
+        "time": 10.49,
+        "scramble": "U2 B2 L2 D2 B' L2 B' U2 F' U2 R F' D' R B' D2 B2 U2 R2",
+        "date": 1683473825
+    },
+    {
+        "time": 11.1,
+        "scramble": "L2 U2 F U' L F L' U B2 U2 B2 U' B2 U2 L2 B2 R2 F2 L F",
+        "date": 1683473846
+    },
+    {
+        "time": 9.95,
+        "scramble": "L' D L2 D2 L2 F2 U B2 D L2 B2 R' B2 L' B F' U' R' F' R2",
+        "date": 1683473867
+    },
+    {
+        "time": 8.8,
+        "scramble": "D' B' R' D2 R B2 L2 B2 D2 R' U2 B2 R2 F2 B U R' F U F' U'",
+        "date": 1683473887
+    },
+    {
+        "time": 9.26,
+        "scramble": "F' R2 D R2 D2 B2 D2 U B2 R2 U2 F2 B' U B2 R F L D L2 F'",
+        "date": 1683473904
+    },
+    {
+        "time": 10.29,
+        "scramble": "D U B2 F2 D' R2 U R2 F2 L B' F R2 U2 F2 L B2 F' R",
+        "date": 1683473923
+    },
+    {
+        "time": 9.87,
+        "scramble": "B' L2 F2 R2 D2 B2 F R2 D2 B2 U2 D F2 L R U L2 B2 L' F' U2",
+        "date": 1683473946
+    },
+    {
+        "time": 11.74,
+        "scramble": "D2 L2 D2 F2 R2 F R2 U2 B2 R2 B' U2 L B' L2 D B' D2 R F",
+        "date": 1683473964
+    },
+    {
+        "time": 9.5,
+        "scramble": "F R D' F U' B' R2 U F2 D2 L2 F' B2 L2 F' U2 F U2 D2 L2",
+        "date": 1683473986
+    },
+    {
+        "time": 12.03,
+        "scramble": "F2 D2 U' L2 U R2 U' L2 F2 D2 B' R2 U' F R D' F U L'",
+        "date": 1683474004
+    },
+    {
+        "time": 13.71,
+        "scramble": "D2 F' L2 B' R2 F2 U2 L2 U2 L2 B2 F D' R' F' L D R' F' D2 F",
+        "date": 1683474050
+    },
+    {
+        "time": 11.89,
+        "scramble": "U2 F2 U2 R' U B' R2 D L2 B' R2 U2 R2 B D2 R2 B U2 F' L'",
+        "date": 1683474073
+    },
+    {
+        "time": 9.44,
+        "scramble": "U2 L2 R2 F2 U' R2 F2 D R2 D2 B2 U R' D R2 U2 L B' R U F",
+        "date": 1683474122
+    },
+    {
+        "time": 8.68,
+        "scramble": "D2 B' R2 U D2 B D L2 U2 R2 B U2 B U2 F' D2 B2 L'",
+        "date": 1683474140
+    },
+    {
+        "time": 9.25,
+        "scramble": "U' B U2 F2 L' U2 L U2 B2 L D2 R B2 U' R' F R' F R2 D B'",
+        "date": 1683474160
+    },
+    {
+        "time": 10.81,
+        "scramble": "D F B R2 D B U2 D2 L' F2 U2 R2 U' F2 U' B2 U R2 D2 F2",
+        "date": 1683474179
+    },
+    {
+        "time": 10.53,
+        "scramble": "U2 B R2 U2 F' R2 F' D2 B' U2 B2 U2 R U' R' B' F U B' R F'",
+        "date": 1683474200
+    },
+    {
+        "time": 12.42,
+        "scramble": "B L U' B2 D' L2 R2 U R2 D R2 U B2 U R' D' B' R2 B2 D L",
+        "date": 1683474219
+    },
+    {
+        "time": 12.74,
+        "scramble": "U2 L2 R2 F L2 B2 D2 L2 B' L' D F' L B' F' L' B2 U F",
+        "date": 1683474239
+    },
+    {
+        "time": 13.2,
+        "scramble": "B' L2 F2 U B2 F2 R2 U' B2 U' B2 D2 F' R' B' F' L B U R2",
+        "date": 1683474267
+    },
+    {
+        "time": 9.02,
+        "scramble": "D2 F L2 U2 F2 L2 D B2 U2 B2 L2 R2 U' F D2 L2 U2 R' D R'",
+        "date": 1683474332
+    },
+    {
+        "time": 9.41,
+        "scramble": "F2 U R F2 U' F U' F2 L' R2 B2 D L2 F2 B2 U2 B2 D L2",
+        "date": 1683474352
+    },
+    {
+        "time": 10.45,
+        "scramble": "D' R' U2 B2 L2 D F2 U F2 U B2 D' L2 F' D' L R U L2 B F2",
+        "date": 1683474399
+    },
+    {
+        "time": 16.18,
+        "scramble": "F2 D' F2 D2 B2 L2 U2 R2 F2 U' B U' R' B L' F D R D",
+        "date": 1683474420
+    },
+    {
+        "time": 11.65,
+        "scramble": "B2 L' F2 R' D2 L2 F2 D2 B2 R' F2 U L' F L U' B R' F'",
+        "date": 1683474445
+    },
+    {
+        "time": 10.15,
+        "scramble": "F U R B2 L F' D2 F D L2 F2 L2 F' L2 U2 R2 B' D2 B",
+        "date": 1683474468
+    },
+    {
+        "time": 11.51,
+        "scramble": "U R D F2 B U' L U2 F' L2 F2 L2 D2 B D2 F2 R2 D' B'",
+        "date": 1683474487
+    },
+    {
+        "time": 10.77,
+        "scramble": "L' R2 D' F2 D R2 F2 D' F2 D2 L2 U' F2 B' R' U F2 D2 B' F' L",
+        "date": 1683474508
+    },
+    {
+        "time": 11.49,
+        "scramble": "B D L2 D L2 U' L2 B2 D2 B2 F2 D F2 L' D F D2 B2 R2 D' R2",
+        "date": 1683474548
+    },
+    {
+        "time": 9.88,
+        "scramble": "L2 D2 R2 D L2 U' B2 F2 R2 B2 D' L U B2 L2 R2 U2 F D L2",
+        "date": 1683474577
+    },
+    {
+        "time": 8.77,
+        "scramble": "L2 B2 L2 R2 D2 U2 F' L2 B U2 F D2 U' L' F L R' D' L2 U' B2",
+        "date": 1683474610
+    },
+    {
+        "time": 11.92,
+        "scramble": "U2 R B2 U' L F L' R2 F2 U2 R2 B' R2 D2 B D2 F' R2 D F",
+        "date": 1683474637
+    },
+    {
+        "time": 11.79,
+        "scramble": "L2 F' U L2 B2 D B2 F2 U2 B2 F2 L2 U' B R2 U2 L R' D B",
+        "date": 1683474657
+    },
+    {
+        "time": 13.66,
+        "scramble": "L2 D L2 B2 D2 U' L2 D B2 R B' U B2 D L' R2 U2 B2 F",
+        "date": 1683474691
+    },
+    {
+        "time": 10.98,
+        "scramble": "R2 U R2 D2 R' F U B R2 L2 F2 D2 L2 B R2 D2 F' U2 F2 U'",
+        "date": 1683474719
+    },
+    {
+        "time": 11.82,
+        "scramble": "R F2 R' B' U R F' D B2 L2 D B2 U F2 B2 R2 U2 L2 D R",
+        "date": 1683474740
+    },
+    {
+        "time": 10.2,
+        "scramble": "L R2 D2 R2 D L2 B2 D2 U F2 U L B L' D' R' D L' R F",
+        "date": 1683474782
+    },
+    {
+        "time": 10.67,
+        "scramble": "F2 R2 U F2 D U2 R2 U B2 U L2 R' B2 F' L' R2 B' U' L' U2 F",
+        "date": 1683474808
+    },
+    {
+        "time": 9.94,
+        "scramble": "L2 U' B R2 D F U' L' R2 U F2 D2 R2 D2 R2 D F2 U' L'",
+        "date": 1683474828
+    },
+    {
+        "time": 12.75,
+        "scramble": "U2 R2 B2 L2 F' L2 R2 F D2 L2 F L2 R' U' L2 U L' B R D L2",
+        "date": 1683474849
+    },
+    {
+        "time": 10.35,
+        "scramble": "F' U2 F' B2 D L2 U2 F2 D' R2 D2 F2 U B2 F' R' F2 U' B U2 R",
+        "date": 1683474895
+    },
+    {
+        "time": 10.01,
+        "scramble": "L2 B2 R B2 U2 L B2 D2 B2 R' F2 D R' F R' B2 U2 R2 F'",
+        "date": 1683474915
+    },
+    {
+        "time": 10.76,
+        "scramble": "D' L' B D B R U' D F' R F2 R2 F2 D2 R' D2 R' U2 F2 L2 D2",
+        "date": 1683474935
+    },
+    {
+        "time": 9.8,
+        "scramble": "L2 R2 F' D2 R2 F R2 F R2 D2 B' U' F' L D' L2 U B R",
+        "date": 1683474960
+    },
+    {
+        "time": 9.78,
+        "scramble": "F2 L D2 F U2 D' R' F D2 F2 U2 D2 L' U2 L' B2 L' U2 L' U'",
+        "date": 1683474999
+    },
+    {
+        "time": 8.99,
+        "scramble": "R2 B' L2 R2 F2 L2 F' L2 B R2 B U' F' R' D B2 D B L2 U",
+        "date": 1683475024
+    },
+    {
+        "time": 11.18,
+        "scramble": "R2 B2 L2 D2 R2 U2 B2 R' F2 R2 U2 F2 D R F' D' B2 U B2 U L2",
+        "date": 1683475051
+    },
+    {
+        "time": 12.86,
+        "scramble": "L2 F2 L D2 B2 R2 F2 L F2 L F2 R' B D F2 L F' L2 F2 U' L",
+        "date": 1683475090
+    },
+    {
+        "time": 11.23,
+        "scramble": "L B2 F2 L U2 B2 L' B2 R' D2 R D' R2 B2 D2 B' L R U F2",
+        "date": 1683475116
+    },
+    {
+        "time": 8.61,
+        "scramble": "F' B2 U2 L' R2 U2 L U2 B2 R U' L' F L2 F2 D2 R2",
+        "date": 1683475138
+    },
+    {
+        "time": 8.99,
+        "scramble": "F2 D2 F' L2 B2 D2 F U2 L2 B2 D2 L U B' F2 U' L2 D B R2",
+        "date": 1683475159
+    },
+    {
+        "time": 9.52,
+        "scramble": "F' D F2 R2 D' B2 D2 B2 L2 D2 F2 U' L' D R2 F' L' D' R2 U2",
+        "date": 1683475189
+    },
+    {
+        "time": 13.49,
+        "scramble": "R' B' D F2 L2 F2 U R2 F2 U2 R2 U' R2 D F' R U L2 B' R'",
+        "date": 1683475207
+    },
+    {
+        "time": 11.23,
+        "scramble": "B D B' D' F L' F U R F2 D R2 U B2 U' F2 D B2 D",
+        "date": 1683475232
+    },
+    {
+        "time": 10.09,
+        "scramble": "D2 U2 L2 B L2 B2 F' U2 L2 U2 R2 B D L U F' L2 U' F2 L U'",
+        "date": 1683475253
+    },
+    {
+        "time": 9.75,
+        "scramble": "R2 D2 L2 F2 D2 U2 F2 U B' D2 F' U' F' R2 U F2 L' R'",
+        "date": 1683475272
+    },
+    {
+        "time": 9.3,
+        "scramble": "R' L' D F' B' L2 U F R2 L2 B2 D R2 D' L2 B2 L2 F2 U' D' R",
+        "date": 1683475292
+    },
+    {
+        "time": 11.78,
+        "scramble": "F2 U L F U' D R2 F R' U' R2 U' L2 B2 R2 U' B2 U L2",
+        "date": 1683475311
+    },
+    {
+        "time": 11.23,
+        "scramble": "L U B' U2 L2 R2 B U2 B' R2 U2 F U2 R' D R D' R U' L",
+        "date": 1683475336
+    },
+    {
+        "time": 10.52,
+        "scramble": "U2 D' R2 F' D' R' U' L2 F D2 R U2 R2 D2 B2 R D2 F2 L U2 R'",
+        "date": 1683475359
+    },
+    {
+        "time": 10.61,
+        "scramble": "F2 U' L2 U' L2 U' L2 D2 B2 R2 L U' R U2 B U' R2 U2 B'",
+        "date": 1683475378
+    },
+    {
+        "time": 11.2,
+        "scramble": "R' L2 F2 D2 B L2 U R2 F L2 B' L2 F2 D2 F2 B' L2 D2 R' U'",
+        "date": 1683475425
+    },
+    {
+        "time": 12.43,
+        "scramble": "R2 B L2 F2 D' B2 L2 R2 U' F2 R F L2 B U' L U L'",
+        "date": 1683475446
+    },
+    {
+        "time": 9.33,
+        "scramble": "L2 B' U2 B U2 F2 U2 R2 U2 L2 F2 R' F L2 U F' L' U2 F L D",
+        "date": 1683475468
+    },
+    {
+        "time": 8.8,
+        "scramble": "D2 L F U D2 B2 R U2 L2 D B2 U R2 B2 D R2 B2 D2 F",
+        "date": 1683475490
+    },
+    {
+        "time": 13.68,
+        "scramble": "U' L2 F2 D2 B2 F2 D' F2 D' R2 U B F R' F U2 B' L2 U' L2",
+        "date": 1683475511
+    },
+    {
+        "time": 12.82,
+        "scramble": "F2 L2 D2 L2 F2 U' B2 U F2 U F U L2 D' L' U' B' D B2",
+        "date": 1683475534
+    },
+    {
+        "time": 9.1,
+        "scramble": "F R F2 R' D2 L' B2 F2 L2 U2 R D2 R' D R2 U B' L' R U2",
+        "date": 1683475596
+    },
+    {
+        "time": 10.77,
+        "scramble": "D' L D' L2 D' L2 U F2 U' F2 U B2 F2 U2 B' U F2 U' L B' D'",
+        "date": 1683475623
+    },
+    {
+        "time": 13.57,
+        "scramble": "B R' U2 B R F2 R F' R' B2 U' F2 L2 U B2 D' R2 D L2 U",
+        "date": 1683475650
+    },
+    {
+        "time": 11.37,
+        "scramble": "D2 U2 L2 D2 B2 L' D2 F2 R D2 R2 U2 F' R U L2 D L2 D' B2",
+        "date": 1683475739
+    },
+    {
+        "time": 10.63,
+        "scramble": "D R B' L2 D2 B U2 F' D2 L2 F2 D2 R2 F L U' L2 R2 U B2 D",
+        "date": 1683475761
+    },
+    {
+        "time": 8.79,
+        "scramble": "L' U' F2 L' R2 B2 U2 R F2 D2 L2 R' U2 F U R' B' D2 B' R2",
+        "date": 1683475781
+    },
+    {
+        "time": 12.78,
+        "scramble": "L D B2 L' D2 L2 B2 R F2 L' D2 B' D2 U2 L2 B' U2 R' D",
+        "date": 1683475799
+    },
+    {
+        "time": 11.31,
+        "scramble": "R' U B D' B' D2 B' R' B2 U' F2 D2 B2 L2 B2 R2 D L2 U' L'",
+        "date": 1683475822
+    },
+    {
+        "time": 9.95,
+        "scramble": "F B' L' U' L U' F' L2 F' B2 L2 U B2 U R2 B2 D R2 U' F2 D2",
+        "date": 1683475858
+    },
+    {
+        "time": 14.34,
+        "scramble": "B2 F2 R2 D L2 U' R2 B2 D U' F2 B L2 D R' B' D2 U' B' F'",
+        "date": 1683475887
+    },
+    {
+        "time": 9.73,
+        "scramble": "F B D' B U2 L U L2 F2 D2 L2 F U2 F' D2 B' U2 F' D' L'",
+        "date": 1683475931
+    },
+    {
+        "time": 13.24,
+        "scramble": "D B' L' D2 B2 R2 D R L2 U R2 D' R2 D' B2 D' L2 F2 D2 R",
+        "date": 1683475949
+    },
+    {
+        "time": 10.93,
+        "scramble": "B' L' F R' L F' B' L U F2 D2 F2 R B2 R U2 D2 L D2 L",
+        "date": 1683475992
+    },
+    {
+        "time": 9.38,
+        "scramble": "B' R U2 L' F D' R' F R U R2 F2 D' L2 F2 R2 L2 D' F2 D",
+        "date": 1683476012
+    },
+    {
+        "time": 9.64,
+        "scramble": "L2 F R' U2 L2 F' D L2 B' U2 D2 L' B2 L2 F2 D2 L2 D2 R F2",
+        "date": 1683476083
+    },
+    {
+        "time": 10.58,
+        "scramble": "L2 F2 D' L D2 R2 F2 U F D2 B L2 U2 F' D2 R2 B' R2 F' L'",
+        "date": 1683476110
+    },
+    {
+        "time": 13.14,
+        "scramble": "B' U' R2 F2 D' U B2 L2 B2 U2 L' B D' U R D U2 B' R",
+        "date": 1683476147
+    },
+    {
+        "time": 11.87,
+        "scramble": "B' R L2 B2 U2 B2 D' L2 U2 F2 D' L2 B' D R F' R2 F U2 B'",
+        "date": 1683476171
+    }
+]

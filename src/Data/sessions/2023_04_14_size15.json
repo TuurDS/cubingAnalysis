@@ -1,0 +1,77 @@
+[
+    {
+        "time": 11.59,
+        "scramble": "L2 B' D2 B U2 B D2 R2 F R2 B' L F' D L F' L B' F' U2",
+        "date": 1684082167
+    },
+    {
+        "time": 11.42,
+        "scramble": "L2 F2 L2 B2 D' L2 U' F2 D' R2 D' B L' U' L D' U2 L R' D F",
+        "date": 1684082189
+    },
+    {
+        "time": 8.66,
+        "scramble": "D' R2 U2 F D2 U2 B' D2 R2 F U2 F R B' D B' F' L D R2",
+        "date": 1684082212
+    },
+    {
+        "time": 10.8,
+        "scramble": "F' R' D' F2 U2 B R2 F2 D2 U2 F L2 F L2 R B2 D L B2 R D2",
+        "date": 1684082230
+    },
+    {
+        "time": 10.07,
+        "scramble": "L' B U' R2 D2 B2 R2 F2 D' B2 F2 U R' U F' U2 F2 D2 L2 B'",
+        "date": 1684082249
+    },
+    {
+        "time": 10.98,
+        "scramble": "L' F U2 F2 D2 B' D2 F L2 R2 F2 R2 D B F2 R' F2 U' F R U2",
+        "date": 1684082269
+    },
+    {
+        "time": 8.88,
+        "scramble": "B U F2 L2 D' R' F2 R2 U' R2 L2 U2 F' U2 B2 U2 L2 U2 B U2 F2",
+        "date": 1684082289
+    },
+    {
+        "time": 10.74,
+        "scramble": "D2 L2 B L B R D' B L2 U R2 L2 B2 D' R2 D2 B2 R2 U B",
+        "date": 1684082318
+    },
+    {
+        "time": 9.78,
+        "scramble": "U2 R U L2 U2 F2 L2 F2 D B2 L2 D' F2 L' F L2 U2 L2 F' L F'",
+        "date": 1684082339
+    },
+    {
+        "time": 9.88,
+        "scramble": "U R F2 D F2 D F2 B' R' U' L2 U2 D L2 U R2 D' B2 U' R2 B2",
+        "date": 1684082356
+    },
+    {
+        "time": 8.91,
+        "scramble": "U F' R' U B' U' L2 D' R' L2 U F2 D' L2 D B2 D' L2 F2",
+        "date": 1684082374
+    },
+    {
+        "time": 8.77,
+        "scramble": "R' F' R' B U2 B D2 R2 U2 L2 B' R2 F' D L U2 L2 U' R B'",
+        "date": 1684082392
+    },
+    {
+        "time": 8.13,
+        "scramble": "F2 U2 B2 R F2 R2 F2 L' U2 L R' U' B F2 R D2 L D L' R'",
+        "date": 1684082413
+    },
+    {
+        "time": 11.25,
+        "scramble": "R2 U2 R U' B2 D U F2 R2 B2 F2 U' R2 U B' L B F R' F' D",
+        "date": 1684082430
+    },
+    {
+        "time": 11.13,
+        "scramble": "B2 R' B2 L2 B2 R U2 L' R' U2 D B F2 U2 R' D' U F D'",
+        "date": 1684082449
+    }
+]
