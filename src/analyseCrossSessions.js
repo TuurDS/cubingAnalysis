@@ -40,7 +40,7 @@ const analyseDataWrap = (chunksize) => {
         }
         const result = analyseData(input);
         sessionResults.push(result);
-        logSingleSession({ session: `\x1b[32mchunk \x1b[33m${currentSession} \x1b[36mchunks of \x1b[33m${chunksize}`, ...result });
+        logSingleSession(`\x1b[32mchunk \x1b[33m${currentSession} \x1b[36mchunks of \x1b[33m${chunksize}`, result);
         currentSession++;
     }
     return sessionResults;

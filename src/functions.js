@@ -1,3 +1,44 @@
+class analyseResult {
+    constructor({
+        amtSolves,
+        amtAnalysed,
+        AmountBeforesubXArr,
+        totalTime,
+        avrTime,
+        minAmountBeforeSubX,
+        maxAmountBeforeSubX,
+        currentAmountAfterSubX,
+        avrAmountBeforeSubX,
+        medianAmountBeforeSubX,
+        start,
+        end,
+        subX,
+        subXPercent,
+        limit,
+        starttime,
+        endtime
+    }) {
+        this.amtSolves = amtSolves;
+        this.amtAnalysed = amtAnalysed;
+        this.AmountBeforesubXArr = AmountBeforesubXArr;
+        this.totalTime = totalTime;
+        this.avrTime = avrTime;
+        this.minAmountBeforeSubX = minAmountBeforeSubX;
+        this.maxAmountBeforeSubX = maxAmountBeforeSubX;
+        this.currentAmountAfterSubX = currentAmountAfterSubX;
+        this.avrAmountBeforeSubX = avrAmountBeforeSubX;
+        this.medianAmountBeforeSubX = medianAmountBeforeSubX;
+        this.start = start;
+        this.end = end;
+        this.subX = subX;
+        this.subXPercent = subXPercent;
+        this.limit = limit;
+        this.starttime = starttime;
+        this.endtime = endtime;
+    } 
+}
+
+
 const formatBars = (int, max, limit = 50) => {
     if (Math.round(int / max * limit) === 0) return "▌"
     let bar = ""
@@ -115,7 +156,7 @@ const analyseData = ({ data, start, end, subX, limit }) => {
 
     endtime = performance.now();
 
-    return {
+    return new analyseResult({
         amtSolves,
         amtAnalysed,
         AmountBeforesubXArr,
@@ -133,7 +174,7 @@ const analyseData = ({ data, start, end, subX, limit }) => {
         limit,
         starttime,
         endtime
-    }
+    })
 }
 
 const logSingleResults = ({
@@ -188,47 +229,10 @@ const logSingleResults = ({
     }
 }
 
-const logSingleSession = ({
-    session,
-    amtSolves,
-    amtAnalysed,
-    AmountBeforesubXArr,
-    totalTime,
-    avrTime,
-    minAmountBeforeSubX,
-    maxAmountBeforeSubX,
-    currentAmountAfterSubX,
-    avrAmountBeforeSubX,
-    medianAmountBeforeSubX,
-    start,
-    end,
-    subX,
-    subXPercent,
-    limit,
-    starttime,
-    endtime
-}) => {
+const logSingleSession = (session, analyseResult) => {
     console.log("\x1b[33m" + session);
 
-    logSingleResults({
-        amtSolves,
-        amtAnalysed,
-        AmountBeforesubXArr,
-        totalTime,
-        avrTime,
-        minAmountBeforeSubX,
-        maxAmountBeforeSubX,
-        currentAmountAfterSubX,
-        avrAmountBeforeSubX,
-        medianAmountBeforeSubX,
-        start,
-        end,
-        subX,
-        subXPercent,
-        limit,
-        starttime,
-        endtime
-    });
+    logSingleResults(analyseResult);
 }
 
 module.exports = {

@@ -24,7 +24,7 @@ const analyseDataWrap = (startPercentage, files) => {
         }
         const result = analyseData(input);
         sessionResults.push(result);
-        logSingleSession({ session: `\x1b[32msession \x1b[33m${currentSession} \x1b[36mremoved \x1b[33m${startPercentage * 100}%`, ...result });
+        logSingleSession(`\x1b[32msession \x1b[33m${currentSession} \x1b[36mremoved \x1b[33m${startPercentage * 100}%`, result);
         currentSession++;
     }
     return sessionResults;
@@ -40,8 +40,7 @@ const percentages = {
 const resultArrays = {};
 
 for (const percentage in percentages) {
-    resultArrays[percentage] = [];
-    resultArrays[percentage] = analyseDataWrap(percentages[percentage], files);
+    resultArrays[percentage] = analyseDataWrap(percentages[percentage], files) ?? [];
 }
 
 //show a graph of the results result.subXPercent and result.avrTime

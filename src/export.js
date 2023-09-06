@@ -31,15 +31,20 @@ fs.readFile("./src/currentData/csTimerExport.json", 'utf-8', (err, data) => {
     //   ...
     // }
 
-    //filter an object and filter out the keys that are not in the filternameArr
-    let filternameArr = ["f2l", "cross", "oll", "pll"]
+    //filter out the sessions that are not the standard wca 3x3x3
+
+    let filterSrcType = "333"
 
     sessions = Object.entries(sessions).filter((value) => {
-        return !filternameArr.includes(sessionData[value[0].slice(7)].name)
+        let srcType = sessionData[value[0].slice(7)].opt?.scrType;
+        if(!srcType) return true; //filter if srcType is not filled in
+        return srcType == filterSrcType; //filter if srcType is not equal to "filterSrcType"
     }).reduce((obj, [key, value]) => {
         obj[key] = value;
         return obj;
     }, {});
+
+
 
     //filter the sr
     //create a file for each session

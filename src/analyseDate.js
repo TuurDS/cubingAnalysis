@@ -71,8 +71,6 @@ function getPeriodFunc(period) {
     }
 }
 
-//make generic function divideIntoPeriods(data, period)
-//period can be "week", "month", "year" use a switch statement
 function divideIntoPeriods(data, period, days = 7) {
     const periodFunc = getPeriodFunc(period);
 
@@ -116,7 +114,7 @@ function analyseDataWrap(period) {
 
         let weekAnalysis = analyseData(input);
         results.push({ label: week.label, ...weekAnalysis });
-        logSingleSession({ session: week.label, ...weekAnalysis });
+        logSingleSession(week.label, weekAnalysis);
     }
     return { label, results };
 }
