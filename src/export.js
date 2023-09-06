@@ -33,6 +33,7 @@ fs.readFile("./src/currentData/csTimerExport.json", 'utf-8', (err, data) => {
 
     //filter an object and filter out the keys that are not in the filternameArr
     let filternameArr = ["f2l", "cross", "oll", "pll"]
+
     sessions = Object.entries(sessions).filter((value) => {
         return !filternameArr.includes(sessionData[value[0].slice(7)].name)
     }).reduce((obj, [key, value]) => {
@@ -40,6 +41,7 @@ fs.readFile("./src/currentData/csTimerExport.json", 'utf-8', (err, data) => {
         return obj;
     }, {});
 
+    //filter the sr
     //create a file for each session
     for (let session in sessions) {
 
@@ -54,9 +56,10 @@ fs.readFile("./src/currentData/csTimerExport.json", 'utf-8', (err, data) => {
         //get the session name to format DD_MM_YYYY_sizesessionLength.json
         //make days less than 10 have a 0 in front use ternary operator
         let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
-        let month = date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth();
+        let month = date.getMonth() + 1;
+        let formattedMonth = month < 10 ? "0" + month : month;
         let year = date.getFullYear();
-        let sessionFileName = year + "_" + month + "_" + day + "_size" + sessionLength;
+        let sessionFileName = year + "_" + formattedMonth + "_" + day + "_size" + sessionLength;
 
         //covert the object to {
         // "time": 12.27,

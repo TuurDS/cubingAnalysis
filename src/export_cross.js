@@ -26,9 +26,10 @@ let date = new Date();
 //get the session name to format DD_MM_YYYY_sizesessionLength.json
 //make days less than 10 have a 0 in front use ternary operator
 let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
-let month = date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth();
+let month = date.getMonth() + 1;
+let formattedMonth = month < 10 ? "0" + month : month;
 let year = date.getFullYear();
-let sessionFileName = year + "_" + (month + 1) + "_" + day + "_size" + sessionLength + ".json";
+let sessionFileName = year + "_" + formattedMonth + "_" + day + "_size" + sessionLength + ".json";
 
 
 //write the data to the cross-sessionsExport.json file
