@@ -117,6 +117,10 @@ const chartJSNodeCanvas = new ChartJSNodeCanvas({
     const imageSubXPercent = await chartJSNodeCanvas.renderToBuffer(configurationSubXPercent);
     const imageAvrTime = await chartJSNodeCanvas.renderToBuffer(configurationAvrTime);
 
+    if (!fs.existsSync("./src/Data/graphs/sessions/")) {
+        fs.mkdirSync("./src/Data/graphs/sessions/", { recursive: true });
+    }
+
     fs.writeFileSync('./src/Data/graphs/sessions/SubXPercent.png', imageSubXPercent);
     fs.writeFileSync('./src/Data/graphs/sessions/AvrTime.png', imageAvrTime);
 })();

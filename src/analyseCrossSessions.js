@@ -90,7 +90,7 @@ const exportBothGraphs = async (resultArray, chunksize) => {
     //create a folder named after the chunksize
     //if it doesn't exist
     if (!fs.existsSync(`./src/Data/graphs/cross-sessions/${chunksize}`)) {
-        fs.mkdirSync(`./src/Data/graphs/cross-sessions/${chunksize}`);
+        fs.mkdirSync(`./src/Data/graphs/cross-sessions/${chunksize}`, { recursive: true });
     }
     fs.writeFileSync(`./src/Data/graphs/cross-sessions/${chunksize}/SubXPercent.png`, imageSubXPercent);
     fs.writeFileSync(`./src/Data/graphs/cross-sessions/${chunksize}/AvrTime.png`, imageAvrTime);

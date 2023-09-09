@@ -179,7 +179,7 @@ const show = async (result) => {
 
     //if it doesn't exist
     if (!fs.existsSync(`./src/Data/graphs/date/${result.label}`)) {
-        fs.mkdirSync(`./src/Data/graphs/date/${result.label}`);
+        fs.mkdirSync(`./src/Data/graphs/date/${result.label}`, { recursive: true });
     }
 
     fs.writeFileSync(`./src/Data/graphs/date/${result.label}/subXPercent.png`, imageSubXPercent);
