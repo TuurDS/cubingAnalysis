@@ -80,7 +80,7 @@ const chartJSNodeCanvas = new ChartJSNodeCanvas({
             data: resultArrays[percentage].map((result, index) => result.subXPercent),
             fill: false,
             borderColor: colors[Object.keys(percentages).indexOf(percentage)],
-            tension: 0.1,
+            tension: 0.4,
             trendlineLinear: {
                 lineStyle: "dotted",
                 width: 2
@@ -106,7 +106,7 @@ const chartJSNodeCanvas = new ChartJSNodeCanvas({
             data: resultArrays[percentage].map((result, index) => result.avrTime),
             fill: false,
             borderColor: colors[Object.keys(percentages).indexOf(percentage)],
-            tension: 0.1,
+            tension: 0.4,
             trendlineLinear: {
                 lineStyle: "dotted",
                 width: 2

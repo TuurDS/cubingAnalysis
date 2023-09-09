@@ -57,7 +57,7 @@ const exportBothGraphs = async (resultArray, chunksize) => {
                 data: resultArray.map((result, index) => result.subXPercent),
                 fill: false,
                 borderColor: "rgba(255, 99, 132)",
-                tension: 0.1,
+                tension: 0.4,
                 trendlineLinear: {
                     lineStyle: "dotted",
                     width: 2
@@ -75,7 +75,7 @@ const exportBothGraphs = async (resultArray, chunksize) => {
                 data: resultArray.map((result, index) => result.avrTime),
                 fill: false,
                 borderColor: "rgba(54, 162, 235)",
-                tension: 0.1,
+                tension: 0.4,
                 trendlineLinear: {
                     lineStyle: "dotted",
                     width: 2
