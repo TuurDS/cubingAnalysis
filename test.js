@@ -79,3 +79,17 @@ fs.writeFileSync("textnew.json", JSON.stringify(json2, null, 2));
 
 //iterate over all the files in cross-sessionsExports
 const files = fs.readdirSync("C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports");
+
+for (const file of files) {
+    //read the file
+    const f = fs.readFileSync(`C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports/${file}`, "utf8");
+    const json = JSON.parse(f);
+    //iterate over each key in the json object
+    for (const key in json) {
+        const obj = json[key];
+        //update the time obj
+        json[key] = { ...obj, date: Number(obj.date) };
+    }
+    //write the file
+    fs.writeFileSync(`C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports/${file}`, JSON.stringify(json, null, 2));
+}
