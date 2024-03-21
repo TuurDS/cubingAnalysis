@@ -1,7 +1,7 @@
 const fs = require("fs-extra");
 const part1 = () => {
     //read the file
-    const f = fs.readFileSync("C:/Users/Tuur/projects/cubingAnalysis/src/Data/cross-sessionsExports/2024_02_21_size67220.json", "utf8"); 
+    const f = fs.readFileSync("C:/Users/Tuur/projects/cubingAnalysis/src/Data/cross-sessionsExports/2024_02_21_size67217.json", "utf8"); 
     const json = JSON.parse(f);
 
     //read the file text.json
@@ -63,18 +63,19 @@ const part1 = () => {
     for (const key in json2) {
         const { name, opt, rank, stat, date } = json2[key];
 
-        if (null != stat[2]) {  
-            continue;
-        }
+        // if (null != stat[2]) {  
+        //     continue;
+        // }
 
         //get the start and end date and parse them to an integer
         const [start, end] = date.map(Number);
-        const avr = caculateAverage(start, end);
+        // const avr = caculateAverage(start, end);
         //generate the same object with the average time added and the start and end date parsed to a number
-        json2[key] = { name, opt, rank, stat: [stat[0],stat[1],avr], date: [start, end] };
+        // json2[key] = { name, opt, rank, stat: [stat[0],stat[1],avr], date: [start, end] };
+        json2[key] = { name, opt, rank, stat: stat, date: [start, end] };
     }
     // write to textnew.json
-    fs.writeFileSync("textnew.json", JSON.stringify(json2, null, 2));
+    fs.writeFileSync("textnew.json", JSON.stringify(json2));
 }
 //done part 1
 const part2 = () => {
@@ -96,5 +97,29 @@ const part2 = () => {
     }
 }
 
+const part3 = () => {
+    const file = fs.readFileSync("C:/Users/Tuur/projects/cubingAnalysis/src/currentData/cstimerExport.json")    
+
+    const json = JSON.parse(file);
+    const lastI = 538;
+    //loop over over each property named "sessionI" where I is a number between 0 and lastI
+    for (let i = 1; i <= lastI; i++) {
+        try {
+            const session = json[`session${i}`];
+            //loop over all elements in the array
+            for (const obj of session) {
+                //update the time which is the 4th element in the sub array
+                obj[3] = Number(obj[3]);
+            }
+        } catch (error) {
+            console.log(error);   
+        }
+    }
+    //write the file
+    fs.writeFileSync("C:/Users/Tuur/projects/cubingAnalysis/src/currentData/cstimerExport.json", JSON.stringify(json, null, 2));
+}
+
+
 part1();
 part2();
+part3();
