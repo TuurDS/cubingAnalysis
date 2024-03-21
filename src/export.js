@@ -54,6 +54,8 @@ fs.readFile("./src/currentData/csTimerExport.json", 'utf-8', (err, data) => {
 
         //length
         let sessionLength = sessionData.length;
+        if(sessionLength < 1) continue; //filter out empty sessions
+
         //date
         let sessionDate = sessionData[0][3];
         //convert to date

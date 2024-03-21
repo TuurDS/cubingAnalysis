@@ -1,7 +1,7 @@
 const fs = require("fs-extra");
 const part1 = () => {
     //read the file
-    const f = fs.readFileSync("C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports/2024_01_05_size58158.json", "utf8"); 
+    const f = fs.readFileSync("C:/Users/Tuur/projects/cubingAnalysis/src/Data/cross-sessionsExports/2024_02_21_size67220.json", "utf8"); 
     const json = JSON.parse(f);
 
     //read the file text.json
@@ -36,7 +36,7 @@ const part1 = () => {
         //remove the best and worst time
         times = times.sort((a, b) => a - b).slice(1, -1);
         //calculate the average
-        return Math.round(times.reduce((a, b) => a + b * 1000, 0) / times.length);
+        return times.reduce((a, b) => a + b * 1000, 0) / times.length;
     }
 
     //{
@@ -79,11 +79,11 @@ const part1 = () => {
 //done part 1
 const part2 = () => {
     //iterate over all the files in cross-sessionsExports
-    const files = fs.readdirSync("C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports");
+    const files = fs.readdirSync("C:/Users/Tuur/projects/cubingAnalysis/src/Data/cross-sessionsExports");
 
     for (const file of files) {
         //read the file
-        const f = fs.readFileSync(`C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports/${file}`, "utf8");
+        const f = fs.readFileSync(`C:/Users/Tuur/projects/cubingAnalysis/src/Data/cross-sessionsExports/${file}`, "utf8");
         const json = JSON.parse(f);
         //iterate over each key in the json object
         for (const key in json) {
@@ -92,7 +92,7 @@ const part2 = () => {
             json[key] = { ...obj, date: Number(obj.date) };
         }
         //write the file
-        fs.writeFileSync(`C:/Users/tuurd/projects/cubingAnalysis/src/Data/cross-sessionsExports/${file}`, JSON.stringify(json, null, 2));
+        fs.writeFileSync(`C:/Users/Tuur/projects/cubingAnalysis/src/Data/cross-sessionsExports/${file}`, JSON.stringify(json, null, 2));
     }
 }
 
