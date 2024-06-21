@@ -1,0 +1,52 @@
+[
+    {
+        "time": 9.94,
+        "scramble": "L2 D2 U2 R2 B' L2 D2 F' D2 B2 R2 B2 L U L' F2 R D L R D",
+        "date": 1716129884
+    },
+    {
+        "time": 10.08,
+        "scramble": "D2 R2 F2 U' F2 D' U' L2 B2 F2 U' R B' U2 L2 R' F L' B'",
+        "date": 1716129903
+    },
+    {
+        "time": 9.96,
+        "scramble": "L B2 L B2 R' F2 R B2 L' D2 R' F2 U' L2 D' U' L2 B F' L U",
+        "date": 1716129921
+    },
+    {
+        "time": 13.27,
+        "scramble": "L F2 U B2 R2 U2 B D' R' B' L2 B' U2 B2 R2 B' U2 B2 D2 R2",
+        "date": 1716129945
+    },
+    {
+        "time": 11.11,
+        "scramble": "R U B' R2 F U L' B U' R2 D' L2 U R2 D' F2 D2 B2 U L B'",
+        "date": 1716129991
+    },
+    {
+        "time": 8.25,
+        "scramble": "L' U R' D L' B' U' F L' D2 R D2 R2 D2 R F2 R B2 L2 B",
+        "date": 1716130061
+    },
+    {
+        "time": 8.78,
+        "scramble": "L' B' D2 F2 L2 U2 L2 D' R2 D' F2 R2 U B' D' L U' R2 F' R2 U'",
+        "date": 1716130079
+    },
+    {
+        "time": 10.02,
+        "scramble": "B2 D2 R' F2 L2 U2 R F2 U2 R D2 R' U F' R B2 D2 L' F' U2 B",
+        "date": 1716130096
+    },
+    {
+        "time": 8.48,
+        "scramble": "L F R2 D F' R' F' R2 U2 D2 L D2 L U2 F2 R D2 R' D R2",
+        "date": 1716130505
+    },
+    {
+        "time": 10.02,
+        "scramble": "D' B' R' U2 L' D' L F' B R2 U R2 U R2 U' R2 B2 R2 B2 L2 D'",
+        "date": 1716130525
+    }
+]

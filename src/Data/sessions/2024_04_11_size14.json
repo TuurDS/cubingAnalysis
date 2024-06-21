@@ -1,0 +1,72 @@
+[
+    {
+        "time": 10.1,
+        "scramble": "L2 D' F2 R2 D2 U' B2 U R U' F U2 B' L2 R' F2 L2 U'",
+        "date": 1712872605
+    },
+    {
+        "time": 10.67,
+        "scramble": "L2 D2 B D2 L2 F U2 L2 F2 R2 F2 U2 L' U R' D' B' F2 R2 F2 R'",
+        "date": 1712872625
+    },
+    {
+        "time": 10.69,
+        "scramble": "B' R2 U2 R2 D2 B2 R2 F U2 B2 R2 F L' B' R D2 B' L' D B",
+        "date": 1712872652
+    },
+    {
+        "time": 11.27,
+        "scramble": "L' F2 L D2 F2 R B2 D2 L2 R' F2 R' U F U L U2 R' B F2",
+        "date": 1712872675
+    },
+    {
+        "time": 10.22,
+        "scramble": "U2 B2 R2 B L2 R2 B2 F' D2 B' U2 R2 U' B U F' L' U2 B U' B2",
+        "date": 1712872698
+    },
+    {
+        "time": 10.39,
+        "scramble": "B2 D F2 R2 F2 U2 B2 U R2 U2 B2 U' F' R' D' U' L2 B L' B' U2",
+        "date": 1712872750
+    },
+    {
+        "time": 9.37,
+        "scramble": "B U D2 F2 U2 F2 L2 F2 L2 R D2 R D2 B U2 R' U L B D",
+        "date": 1712872773
+    },
+    {
+        "time": 11.94,
+        "scramble": "B R2 U' B' R' U' D F D' U2 F2 R2 U2 D2 F' U2 F D2 R2 D2",
+        "date": 1712872790
+    },
+    {
+        "time": 11.17,
+        "scramble": "D2 F2 L2 B2 R2 D2 U' L2 U B2 U2 L B2 D' R' U F2 R F L R2",
+        "date": 1712872815
+    },
+    {
+        "time": 10.51,
+        "scramble": "D L2 U L2 F2 L2 R2 U L2 D2 F2 R B' R2 D' F' L B' L U'",
+        "date": 1712872838
+    },
+    {
+        "time": 10.05,
+        "scramble": "B' R F2 D2 L' B' U2 F2 D2 R2 L D2 R B2 L2 D2 R D2 U'",
+        "date": 1712872858
+    },
+    {
+        "time": 10.01,
+        "scramble": "R2 U' R U2 B2 U R2 D R2 U F2 R2 U R U' F' L' D' R B'",
+        "date": 1712872879
+    },
+    {
+        "time": 9.1,
+        "scramble": "L' R2 D R2 U R2 F2 D' B2 L2 F2 L F' R2 D B D U L'",
+        "date": 1712872901
+    },
+    {
+        "time": 12.94,
+        "scramble": "U B2 D F2 R2 B2 F2 U' B2 D' U2 L' R' D' R F' R2 B U2 R",
+        "date": 1712872919
+    }
+]
