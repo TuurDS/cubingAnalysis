@@ -1,0 +1,32 @@
+[
+    {
+        "time": 10.29,
+        "scramble": "D2 B' L2 U2 L2 D' F2 D2 R2 F2 U' R2 U2 F2 R D L2 R2 B' R' B'",
+        "date": 1749591543
+    },
+    {
+        "time": 9.57,
+        "scramble": "L2 F2 U R2 D L2 B2 L2 D' B2 R' F D2 L' B D2 R2 U L B'",
+        "date": 1749591561
+    },
+    {
+        "time": 11.98,
+        "scramble": "L' R2 D' R2 D F2 U2 L2 D' R2 B2 R2 F L D L R2 D2 U2 B D'",
+        "date": 1749591581
+    },
+    {
+        "time": 12.4,
+        "scramble": "L' D' R' F2 R U2 L' R D2 U2 R' U2 R' U' F L' B R' F L U'",
+        "date": 1749591604
+    },
+    {
+        "time": 11.42,
+        "scramble": "R F' L2 B L2 F R2 U2 R2 D2 F2 R2 F2 D' L D2 U F D R' B'",
+        "date": 1749591630
+    },
+    {
+        "time": 13.69,
+        "scramble": "R2 F2 D' B R D' F' B R' F2 U' B2 U D2 R2 L2 F2 R2 D2",
+        "date": 1749591689
+    }
+]

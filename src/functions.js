@@ -92,7 +92,7 @@ const analyseData = ({ data, start, end, subX, limit }) => {
     start = evalWrap(start, arr.length, 0)
     end = evalWrap(end, arr.length, 0)
     subX = evalWrap(subX, arr.length, 10)
-    limit = evalWrap(limit, arr.length, 100000)
+    limit = evalWrap(limit, arr.length, 1000000)
 
     //min is 0 else it will be the start
     if (start < 0) start = 0;
