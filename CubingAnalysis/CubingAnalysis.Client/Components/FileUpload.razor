@@ -1,0 +1,23 @@
+﻿<div>
+
+<MudFileUpload T="IBrowserFile" Class="file-upload">
+    <ActivatorContent>
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   Class="file-upload-btn">
+            Single File
+        </MudButton>
+    </ActivatorContent>
+    <SelectedTemplate>
+        @if (context != null)
+        {
+            <MudText>@context.Name</MudText>
+        }
+        else
+        {
+            <MudText>No File</MudText>
+        }
+    </SelectedTemplate>
+</MudFileUpload>
+
+</div>

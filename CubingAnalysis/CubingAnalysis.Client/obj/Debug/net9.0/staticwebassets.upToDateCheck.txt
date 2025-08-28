@@ -1,0 +1,6 @@
+wwwroot\app.css
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+C:\Users\Tuur\projects\cubingAnalysis\cubingAnalysis\CubingAnalysis.Client\wwwroot\app.css
+C:\Users\Tuur\projects\cubingAnalysis\cubingAnalysis\CubingAnalysis.Client\wwwroot\appsettings.Development.json
+C:\Users\Tuur\projects\cubingAnalysis\cubingAnalysis\CubingAnalysis.Client\wwwroot\appsettings.json
