@@ -8,26 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Tuur\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
+    "C:\\Users\\tuurd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\cubingAnalysis\\CubingAnalysis.Core\\CubingAnalysis.Core.csproj",
+      "projectUniqueName": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\CubingAnalysis.Core.csproj",
       "projectName": "CubingAnalysis.Core",
-      "projectPath": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\cubingAnalysis\\CubingAnalysis.Core\\CubingAnalysis.Core.csproj",
-      "packagesPath": "C:\\Users\\Tuur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\cubingAnalysis\\CubingAnalysis.Core\\obj\\",
+      "projectPath": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\CubingAnalysis.Core.csproj",
+      "packagesPath": "C:\\Users\\tuurd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tuur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+        "C:\\Users\\tuurd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -36,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

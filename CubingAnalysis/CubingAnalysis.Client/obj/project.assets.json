@@ -483,6 +483,16 @@
         "buildMultiTargeting": {
           "buildMultiTargeting/MudBlazor.props": {}
         }
+      },
+      "CubingAnalysis.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CubingAnalysis.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CubingAnalysis.Core.dll": {}
+        }
       }
     },
     "net9.0/browser-wasm": {
@@ -966,6 +976,16 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/MudBlazor.props": {}
+        }
+      },
+      "CubingAnalysis.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CubingAnalysis.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CubingAnalysis.Core.dll": {}
         }
       }
     }
@@ -1745,10 +1765,16 @@
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
       ]
+    },
+    "CubingAnalysis.Core/1.0.0": {
+      "type": "project",
+      "path": "../CubingAnalysis.Core/CubingAnalysis.Core.csproj",
+      "msbuildProject": "../CubingAnalysis.Core/CubingAnalysis.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CubingAnalysis.Core >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.*",
       "Microsoft.NET.ILLink.Tasks >= 9.0.8",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.8",
@@ -1756,26 +1782,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tuur\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
+    "C:\\Users\\tuurd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Client\\CubingAnalysis.Client.csproj",
+      "projectUniqueName": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Client\\CubingAnalysis.Client.csproj",
       "projectName": "CubingAnalysis.Client",
-      "projectPath": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Client\\CubingAnalysis.Client.csproj",
-      "packagesPath": "C:\\Users\\Tuur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Client\\obj\\",
+      "projectPath": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Client\\CubingAnalysis.Client.csproj",
+      "packagesPath": "C:\\Users\\tuurd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tuur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+        "C:\\Users\\tuurd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1784,13 +1807,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\CubingAnalysis.Core.csproj": {
+              "projectPath": "C:\\Users\\tuurd\\source\\repos\\TuurDS\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\CubingAnalysis.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

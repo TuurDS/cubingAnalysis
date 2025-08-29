@@ -312,11 +312,20 @@
       },
       "CubingAnalysis.Client/1.0.0": {
         "dependencies": {
+          "CubingAnalysis.Core": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "9.0.8",
           "MudBlazor": "8.11.0"
         },
         "runtime": {
           "CubingAnalysis.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CubingAnalysis.Core/1.0.0": {
+        "runtime": {
+          "CubingAnalysis.Core.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -520,6 +529,11 @@
       "hashPath": "mudblazor.8.11.0.nupkg.sha512"
     },
     "CubingAnalysis.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CubingAnalysis.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CubingAnalysis.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df93e0ecd2f018fe38571d8f311295be8944ed16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e38f9fee3ba94e8b5084aa7b5144717c8765ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("CubingAnalysis.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CubingAnalysis.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CubingAnalysis",
+    "\\CubingAnalysis\\CubingAnalysis.Core",
+    "\\CubingAnalysis\\CubingAnalysis.Core\\parsing"
+  ],
+  "SelectedNode": "\\CubingAnalysis\\CubingAnalysis.Core\\parsing\\ParseCsTimerFile.cs",
+  "PreviewInSolutionExplorer": false
+}

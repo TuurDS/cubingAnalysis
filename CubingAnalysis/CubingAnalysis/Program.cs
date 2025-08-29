@@ -1,6 +1,7 @@
-using MudBlazor.Services;
 using CubingAnalysis.Client.Pages;
 using CubingAnalysis.Components;
+using CubingAnalysis.Core.Services;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

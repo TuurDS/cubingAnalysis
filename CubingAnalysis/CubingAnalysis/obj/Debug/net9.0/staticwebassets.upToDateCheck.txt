@@ -1,2 +1,2 @@
 wwwroot\favicon.ico
-C:\Users\Tuur\projects\cubingAnalysis\cubingAnalysis\CubingAnalysis\wwwroot\favicon.ico
+C:\Users\tuurd\source\repos\TuurDS\cubingAnalysis\CubingAnalysis\CubingAnalysis\wwwroot\favicon.ico

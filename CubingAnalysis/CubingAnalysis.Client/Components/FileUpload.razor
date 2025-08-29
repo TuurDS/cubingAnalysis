@@ -1,23 +1,70 @@
-﻿<div>
+﻿@using CubingAnalysis.Core.Services
+@using Microsoft.AspNetCore.Components.Forms
+@inject IServiceProvider services
 
-<MudFileUpload T="IBrowserFile" Class="file-upload">
-    <ActivatorContent>
-        <MudButton Variant="Variant.Filled"
-                   Color="Color.Primary"
-                   Class="file-upload-btn">
-            Single File
-        </MudButton>
-    </ActivatorContent>
-    <SelectedTemplate>
-        @if (context != null)
-        {
-            <MudText>@context.Name</MudText>
-        }
-        else
-        {
-            <MudText>No File</MudText>
-        }
-    </SelectedTemplate>
-</MudFileUpload>
+<div>
+    <MudFileUpload T="IBrowserFile" Class="file-upload" OnFilesChanged="OnFileChange" MaxFileSize="maxFileSize">
+        <ActivatorContent>
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Class="file-upload-btn">
+                Single File
+            </MudButton>
+        </ActivatorContent>
+        <SelectedTemplate>
+            @if (context != null)
+            {
+                <MudText>@context.Name</MudText>
+            }
+            else
+            {
+                <MudText>No File</MudText>
+            }
+        </SelectedTemplate>
+    </MudFileUpload>
+
+    @fileSize
 
 </div>
+
+@code {
+    private long maxFileSize = 1073741824; // 1 GB
+    private SessionState? sessionState;
+
+    private long fileSize = 0;
+
+    protected override void OnInitialized()
+    {
+        if (services.GetService<SessionState>() is { } service)
+        {
+            sessionState = service;
+        }
+    }
+
+    private async Task OnFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file is null)
+            return;
+
+        using var stream = file.OpenReadStream(maxFileSize);
+        using var reader = new StreamReader(stream);
+
+        var content = await reader.ReadToEndAsync();
+
+        // For now, just store the content string in the SessionState.
+        // Later you can replace this with actual parsing logic.
+        sessionState.Value = new List<object> { content };
+        Console.WriteLine("reached here");
+        if (sessionState.Value.Count > 0)
+        {
+            var str = sessionState.Value[0] as string;
+            if (str != null)
+            {
+                int length = str.Length;
+				fileSize = length;
+            }
+        }
+
+    }
+}
