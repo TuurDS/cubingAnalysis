@@ -1,2 +1,0 @@
-wwwroot\favicon.ico
-C:\Users\tuurd\source\repos\TuurDS\cubingAnalysis\CubingAnalysis\CubingAnalysis\wwwroot\favicon.ico
