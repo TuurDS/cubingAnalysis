@@ -23,7 +23,7 @@
         </SelectedTemplate>
     </MudFileUpload>
 
-    @fileSize
+    @fileLines
 
 </div>
 
@@ -31,7 +31,7 @@
     private long maxFileSize = 1073741824; // 1 GB
     private SessionState? sessionState;
 
-    private long fileSize = 0;
+    private long fileLines = 0;
 
     protected override void OnInitialized()
     {
@@ -50,19 +50,24 @@
         using var stream = file.OpenReadStream(maxFileSize);
         using var reader = new StreamReader(stream);
 
-        var content = await reader.ReadToEndAsync();
+        var lines = new List<string>();
+        string? line;
+        while ((line = await reader.ReadLineAsync()) is not null)
+        {
+            lines.Add(line);
+        }
 
         // For now, just store the content string in the SessionState.
         // Later you can replace this with actual parsing logic.
-        sessionState.Value = new List<object> { content };
+        sessionState!.Value = new List<object> { lines };
         Console.WriteLine("reached here");
         if (sessionState.Value.Count > 0)
         {
-            var str = sessionState.Value[0] as string;
-            if (str != null)
+            var stateLines = sessionState.Value[0] as List<string>;
+            if (stateLines != null)
             {
-                int length = str.Length;
-				fileSize = length;
+                int length = stateLines.Count;
+				fileLines = length;
             }
         }
 
