@@ -1,6 +1,0 @@
-C:\Users\tuurd\source\repos\TuurDS\cubingAnalysis\CubingAnalysis\CubingAnalysis.Client\wwwroot\appsettings.json
-C:\Users\tuurd\source\repos\TuurDS\cubingAnalysis\CubingAnalysis\CubingAnalysis.Client\wwwroot\appsettings.Development.json
-C:\Users\tuurd\source\repos\TuurDS\cubingAnalysis\CubingAnalysis\CubingAnalysis.Client\wwwroot\app.css
-wwwroot\app.css
-wwwroot\appsettings.Development.json
-wwwroot\appsettings.json
