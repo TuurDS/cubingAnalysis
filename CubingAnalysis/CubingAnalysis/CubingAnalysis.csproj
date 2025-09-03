@@ -8,8 +8,11 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\CubingAnalysis.Client\CubingAnalysis.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.*" />
+    <PackageReference Include="MudBlazor" Version="8.*" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\CubingAnalysis.Core\CubingAnalysis.Core.csproj" />
+  </ItemGroup>
 </Project>

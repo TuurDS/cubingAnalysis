@@ -1,0 +1,10 @@
+﻿
+@if (isLoading)
+{
+    <div class="spinner"></div>
+}
+
+@code {
+    [Parameter]
+    public bool isLoading { get; set; } = false;
+}

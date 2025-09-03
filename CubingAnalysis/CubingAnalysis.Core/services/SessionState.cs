@@ -1,14 +1,16 @@
-﻿namespace CubingAnalysis.Core.Services;
+﻿using CubingAnalysis.Core.Models;
+
+namespace CubingAnalysis.Core.Services;
 
 public class SessionState
 {
-    private List<object> _value = [];
+    private List<Session> _value = [];
 
     // Event triggered when the value changes
     public event Action? OnChange;
 
     // Getter/Setter
-    public List<object> Value
+    public List<Session> Value
     {
         get => _value;
         set

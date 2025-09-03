@@ -1,0 +1,85 @@
+﻿@using CubingAnalysis.Core.Services
+@using CubingAnalysis.Core.Parsing
+@using Microsoft.AspNetCore.Components.Forms
+@using System.Text.Json
+@inject SessionState sessionState
+
+<div>
+    <MudFileUpload T="IBrowserFile"
+                   Class="file-upload"
+                   OnFilesChanged="OnFileChange"
+                   MaxFileSize="maxFileSize">
+        <ActivatorContent>
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Class="file-upload-btn">
+                Single File
+            </MudButton>
+        </ActivatorContent>
+
+        <SelectedTemplate>
+            @if (context != null)
+            {
+                <MudText>@context.Name</MudText>
+            }
+            else
+            {
+                <MudText>No File</MudText>
+            }
+        </SelectedTemplate>
+    </MudFileUpload>
+
+    <MudButton Variant="Variant.Filled"
+               Color="Color.Primary"
+               OnClick="@(e => sessionCount = 0)">
+        Reset
+    </MudButton>
+
+    <LoadingSpinner IsLoading="isLoading" />
+    @sessionCount
+
+</div>
+
+@code {
+    private long maxFileSize = 1073741824; // 1 GB
+    private bool isLoading = false;
+    private long sessionCount = 0;
+
+
+    private void OnFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file is null) return;
+
+        isLoading = true; // show spinner
+
+        // Fire-and-forget background task
+        Task.Run(async () =>
+        {
+            try
+            {
+                using var stream = file.OpenReadStream(maxFileSize);
+                using var doc = await JsonDocument.ParseAsync(stream);
+                
+                var parsedSessions = CsTimerParser.ParseTimerExport(doc);
+
+                // Invoke UI updates on the UI thread
+                await InvokeAsync(() =>
+                {
+                    sessionState.Value = parsedSessions;
+                    sessionCount = sessionState.Value.Count;
+                    isLoading = false; // hide spinner
+                    StateHasChanged(); // force re-render
+                });
+            }
+            catch
+            {
+                await InvokeAsync(() =>
+                {
+                    isLoading = false;
+                    StateHasChanged();
+                });
+            }
+        });
+    }
+}
