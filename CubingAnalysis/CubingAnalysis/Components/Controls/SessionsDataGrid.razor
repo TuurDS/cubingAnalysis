@@ -1,0 +1,156 @@
+﻿@using System.Net.Http.Json
+@using CubingAnalysis.Core.Models.Config
+@using CubingAnalysis.Core.Models.Parsing
+@using CubingAnalysis.Core.Models.Analysis
+@inject AnalysisContextService analysisContextService
+
+
+<MudDataGrid T="SessionDataGridResult"
+             Items="@Elements"
+             Filterable="true"
+             SortMode="SortMode.Multiple"
+             FilterMode="@DataGridFilterMode.ColumnFilterMenu">
+
+    <Columns>
+        <PropertyColumn Property="x => x.Name" Title="Name" />
+        <PropertyColumn Format="F2" Property="x => x.SessionAverage" Title="Average" />
+        <PropertyColumn Format="F2" Property="x => x.SessionSubXPercentages" Title="SubX Percentage" />
+        <PropertyColumn Property="x => x.SolveCount" Title="Solve Count" />
+
+        <PropertyColumn Property="x => x.SessionStartDate" Title="Session Start Date">
+            <FilterTemplate>
+                <MudStack Row="true" AlignItems="AlignItems.Center" Justify="Justify.Center" Spacing="3">
+                    <MudDateRangePicker DateRange="_dateRange"
+                                        PlaceholderStart="Start Date"
+                                        PlaceholderEnd="End Date"
+                                        DateRangeChanged="@(async range => await OnDateRangeChangedAsync(range, context))" />
+                    <MudIconButton OnClick="@(() => ClearDateFilterAsync(context))"
+                                   Icon="@Icons.Material.Filled.FilterAltOff"
+                                   Size="Size.Small"/>
+                </MudStack>
+            </FilterTemplate>
+        </PropertyColumn>
+
+    </Columns>
+
+    <PagerContent>
+        <MudDataGridPager T="SessionDataGridResult" />
+    </PagerContent>
+</MudDataGrid>
+
+
+
+@code {
+    private List<SessionDataGridResult> Elements = new();
+    private DateRange? _dateRange { get; set; }
+
+    private FilterDefinition<SessionDataGridResult>? _dateFilterDefinition;
+
+    protected override void OnInitialized()
+    {
+        _dateFilterDefinition = new FilterDefinition<SessionDataGridResult>
+        {
+            FilterFunction = s =>
+            {
+                if (_dateRange?.Start is DateTime start && _dateRange?.End is DateTime end)
+                {
+                    var date = s.SessionStartDate.Date;
+                    return date >= start.Date && date <= end.Date;
+                }
+                return true;
+            }
+        };
+        
+        analysisContextService.Unsubscribe(AnalysisComponentType.DataGrid, UpdateGrid);
+        analysisContextService.Subscribe(AnalysisComponentType.DataGrid, UpdateGrid);
+    }
+
+    public void Dispose()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.DataGrid, UpdateGrid);
+    }
+
+    private void UpdateGrid(HashSet<AnalysisContextProperty> changedProperties)
+    {
+
+        var relevantProperties = new[]
+        {
+            AnalysisContextProperty.SessionData,
+            AnalysisContextProperty.DataGridType,
+            AnalysisContextProperty.StartDate,
+            AnalysisContextProperty.EndDate,
+            AnalysisContextProperty.GridSubX
+        };
+
+        // Only update if relevant properties changed
+        if (!changedProperties.Any(relevantProperties.Contains))
+            return;
+
+        Elements = GetSessionDataGridResults();
+        StateHasChanged();
+    }
+
+    private async Task OnDateRangeChangedAsync(DateRange? newRange, FilterContext<SessionDataGridResult> context)
+    {
+        _dateRange = newRange;
+
+        if (context != null && _dateFilterDefinition != null)
+        {
+            await context.Actions.ApplyFilterAsync(_dateFilterDefinition);
+        }
+    }
+
+    private async Task ClearDateFilterAsync(FilterContext<SessionDataGridResult> context)
+    {
+        if (context is null || _dateFilterDefinition is null)
+            return;
+
+        _dateRange = null;
+        await context.Actions.ClearFilterAsync(_dateFilterDefinition);
+    }
+
+    private async Task ApplyDateFilterAsync(FilterContext<SessionDataGridResult> context)
+    {
+        if (context is null || _dateFilterDefinition is null)
+            return;
+
+        await context.Actions.ApplyFilterAsync(_dateFilterDefinition);
+    }
+
+
+    private List<SessionDataGridResult> GetSessionDataGridResults()
+    {
+        var warmup = 0;
+        var cooldown = 0;  
+
+        var sessionData = analysisContextService.GetSessionData();
+        var subX = analysisContextService.GetGridSubX();
+
+        var filteredSessions = AnalyseSessions.FilterValidSessionsAndResults(sessionData, 0, DateTime.MinValue, DateTime.MaxValue);
+        var avrData = AnalyseSessions.SessionAveragesWithoutWarmupAndCooldown(sessionData, warmup, cooldown, 0, DateTime.MinValue, DateTime.MaxValue);
+        var subXData = AnalyseSessions.SessionSubXPercentagesWithoutWarmupAndCooldown(sessionData, subX, warmup, cooldown, 0, DateTime.MinValue, DateTime.MaxValue);
+        var solveCounts = AnalyseSessions.SessionSolveCounts(sessionData, 0, DateTime.MinValue, DateTime.MaxValue);
+
+        // Check that all lists have the same length
+        var lengths = new[] { filteredSessions.Count, avrData.Count, subXData.Count, solveCounts.Count };
+        if (lengths.Distinct().Count() != 1)
+            throw new InvalidOperationException("Data lists have different lengths, cannot combine into SessionDataGridResult.");
+
+        // Combine all data
+        var results = new List<SessionDataGridResult>();
+        for (int i = 0; i < filteredSessions.Count; i++)
+        {
+            results.Add(new SessionDataGridResult
+            {
+                Name = filteredSessions[i].Name,
+                SessionStartDate = filteredSessions[i].GetSessionStartDate(),
+                SolveCount = solveCounts[i],
+                SessionAverage = avrData[i].Value,
+                SessionSubXPercentages = subXData[i].Value,
+            });
+        }
+
+        return results;
+    }
+
+}

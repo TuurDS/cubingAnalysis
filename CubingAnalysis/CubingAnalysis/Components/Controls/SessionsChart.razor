@@ -1,0 +1,104 @@
+﻿@using CubingAnalysis.Core.Models
+@using CubingAnalysis.Core.Models.Analysis
+@using CubingAnalysis.Core.Models.Config
+@inject AnalysisContextService analysisContextService
+
+<MudTimeSeriesChart ChartSeries="@TimeSeries"
+                    ChartOptions="@_options"
+                    CanHideSeries="true"
+                    AxisChartOptions="@_axisChartOptions"
+                    DataMarkerTooltipTimeLabelFormat="yyyy MMM dd"
+                    TimeLabelFormat="@_timeLabelFormat"
+                    TimeLabelSpacing="@_timeLabelSpacing"
+                    Width="100%" />
+
+@code {
+    private TimeSpan _timeLabelSpacing { get; set; } = TimeSpan.FromDays(31);
+    private String _timeLabelFormat { get; set; } = "dd/MMM/yyyy";
+
+    private ChartOptions _options = new ChartOptions
+    {
+        YAxisTicks = 1,
+        YAxisLines = true,
+        XAxisLines = true,
+        LineStrokeWidth = 1,
+    };
+
+    private AxisChartOptions _axisChartOptions = new()
+    {
+        MatchBoundsToSize = true,
+        XAxisLabelRotation = 45,
+    };
+
+    public List<TimeSeriesChartSeries> TimeSeries { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.Chart, UpdateChart);
+        analysisContextService.Subscribe(AnalysisComponentType.Chart, UpdateChart);
+    }
+    public void Dispose()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.Chart, UpdateChart);
+    }
+
+    private void UpdateChart( HashSet<AnalysisContextProperty> changedProperties)
+    {
+        var relevantProperties = new[]
+        {
+            AnalysisContextProperty.SessionData,
+            AnalysisContextProperty.ChartType,
+            AnalysisContextProperty.StartDate,
+            AnalysisContextProperty.EndDate,
+            AnalysisContextProperty.SessionGroupingPeriod
+        };
+
+        // Only update if relevant properties changed
+        if (!changedProperties.Any(relevantProperties.Contains))
+            return;
+
+        var sessions = analysisContextService.GetSessionData();
+        var startDate = analysisContextService.GetStartDate();
+        var endDate = analysisContextService.GetEndDate();
+        var groupingPeriod = analysisContextService.GetSessionGroupingPeriod();
+
+        // Approximate time labels
+        _timeLabelSpacing = groupingPeriod switch
+        {
+            GroupingPeriod.Day => TimeSpan.FromDays(31),
+            GroupingPeriod.Week => TimeSpan.FromDays(31),
+            GroupingPeriod.Month => TimeSpan.FromDays(31),
+            GroupingPeriod.Quarter => TimeSpan.FromDays(93),
+            GroupingPeriod.Year => TimeSpan.FromDays(366),
+            _ => TimeSpan.FromDays(31)
+        };
+
+        _timeLabelFormat = groupingPeriod switch
+        {
+            GroupingPeriod.Day => "dd/MMM/yyyy",
+            GroupingPeriod.Week => "dd/MMM/yyyy",
+            GroupingPeriod.Month => "MMM yyyy",
+            GroupingPeriod.Quarter => "MMM yyyy",
+            GroupingPeriod.Year => "yyyy",
+            _ => "dd/MMM/yyyy"
+        };
+
+        var averagesByMonth = AnalyseDate.GetAveragesByPeriod(sessions, groupingPeriod, startDate, endDate);
+
+        var series = new TimeSeriesChartSeries
+        {
+            Index = 0,
+            Name = "Average Solve Time (per Month)",
+            Data = averagesByMonth
+                .Select(d => new TimeSeriesChartSeries.TimeValue(d.Period, d.Average))
+                .ToList(),
+            IsVisible = true,
+            LineDisplayType = LineDisplayType.Line,
+            ShowDataMarkers = true,
+        };
+
+        TimeSeries = new List<TimeSeriesChartSeries> { series };
+
+        StateHasChanged();
+    }
+}

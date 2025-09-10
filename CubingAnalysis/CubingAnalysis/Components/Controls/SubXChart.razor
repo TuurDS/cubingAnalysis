@@ -1,0 +1,98 @@
+﻿@using CubingAnalysis.Core.Models
+@using CubingAnalysis.Core.Models.Analysis
+@using CubingAnalysis.Core.Models.Config
+@inject AnalysisContextService analysisContextService
+
+<MudTimeSeriesChart 
+    ChartSeries="@TimeSeries"
+    ChartOptions="@_options"
+    CanHideSeries="true"
+    AxisChartOptions="@_axisChartOptions"
+    DataMarkerTooltipTimeLabelFormat="yyyy MMM dd"
+    TimeLabelFormat="@_timeLabelFormat"
+    TimeLabelSpacing="@_timeLabelSpacing"
+    Width="100%"/>
+
+@code {
+    private TimeSpan _timeLabelSpacing { get; set; } = TimeSpan.FromDays(31);
+    private String _timeLabelFormat { get; set; } = "MMM yyyy";
+
+    private ChartOptions _options = new ChartOptions
+    {
+        YAxisTicks = 10,
+        YAxisLines = true,
+        XAxisLines = true,
+        LineStrokeWidth = 1,
+    };
+
+    private AxisChartOptions _axisChartOptions = new()
+    {
+        MatchBoundsToSize = true,
+        XAxisLabelRotation = 45,
+    };
+
+    public List<TimeSeriesChartSeries> TimeSeries { get; set; } = new();
+
+    private int warmupPercentage = 25;
+    private int cooldownPercentage = 25;
+
+    protected override void OnInitialized()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.Chart, UpdateChart);
+        analysisContextService.Subscribe(AnalysisComponentType.Chart, UpdateChart);
+    }
+
+    public void Dispose()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.Chart, UpdateChart);
+    }
+
+    private void UpdateChart(HashSet<AnalysisContextProperty> changedProperties)
+    {
+
+        var relevantProperties = new[]
+{
+            AnalysisContextProperty.SessionData,
+            AnalysisContextProperty.ChartType,
+            AnalysisContextProperty.StartDate,
+            AnalysisContextProperty.EndDate,
+            AnalysisContextProperty.ChartSubX,
+            AnalysisContextProperty.MininmumSessionResults
+        };
+
+        // Only update if relevant properties changed
+        if (!changedProperties.Any(relevantProperties.Contains))
+            return;
+
+        var sessions = analysisContextService.GetSessionData();
+        var startDate = analysisContextService.GetStartDate();
+        var endDate = analysisContextService.GetEndDate();
+        var subX = analysisContextService.GetChartSubX();
+        var minResults = analysisContextService.GetMininmumSessionResults();
+        
+        var series1 = new TimeSeriesChartSeries
+        {
+            Index = 1,
+            Name = $"Sub-{subX} Percentage",
+            Data = AnalyseSessions.SessionSubXPercentages(sessions, subX, minResults, startDate, endDate)
+                .Select(r => new TimeSeriesChartSeries.TimeValue(r.Time, r.Value))
+                .ToList(),
+            IsVisible = true,
+            LineDisplayType = LineDisplayType.Line
+        };
+
+        var series2 = new TimeSeriesChartSeries
+        {
+            Index = 0,
+            Name = $"Sub-{subX} Percentage (without {warmupPercentage}% warmup/{cooldownPercentage}% cooldown)",
+            Data = AnalyseSessions.SessionSubXPercentagesWithoutWarmupAndCooldown(sessions, subX, warmupPercentage, cooldownPercentage, minResults, startDate, endDate)
+                .Select(r => new TimeSeriesChartSeries.TimeValue(r.Time, r.Value))
+                .ToList(),
+            IsVisible = true,
+            LineDisplayType = LineDisplayType.Line
+        };
+        TimeSeries = new List<TimeSeriesChartSeries> { series2, series1 };
+
+        StateHasChanged();
+    }
+}

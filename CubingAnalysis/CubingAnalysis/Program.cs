@@ -1,6 +1,6 @@
 using MudBlazor.Services;
-using CubingAnalysis.Components;
 using CubingAnalysis.Core.Services;
+using CubingAnalysis.UI.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +11,7 @@ builder.Services.AddMudServices();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-
-builder.Services.AddScoped<SessionState>();
+builder.Services.AddScoped<AnalysisContextService>();
 
 var app = builder.Build();
 

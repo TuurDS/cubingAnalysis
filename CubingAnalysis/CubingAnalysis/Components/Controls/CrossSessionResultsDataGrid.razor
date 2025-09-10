@@ -1,0 +1,137 @@
+﻿@using System.Net.Http.Json
+@using CubingAnalysis.Core.Models.Config
+@using CubingAnalysis.Core.Models.Parsing
+@using CubingAnalysis.Core.Models.Analysis
+@inject AnalysisContextService analysisContextService
+
+
+<MudDataGrid T="CrossSessionDataGridResult"
+             Items="@Elements"
+             Filterable="true"
+             SortMode="SortMode.Multiple"
+             FilterMode="@DataGridFilterMode.ColumnFilterMenu">
+    <Columns>
+        <PropertyColumn Property="x => x.SolveNumber" Title="Solve Number" />
+        <PropertyColumn Format="F2" Property="x => x.Time" Title="Time" />
+        <PropertyColumn Property="x => x.Scramble" Title="Scramble" />
+        <PropertyColumn Property="x => x.Date" Title="Date">
+            <FilterTemplate>
+                <MudStack Row="true" AlignItems="AlignItems.Center" Justify="Justify.Center" Spacing="3">
+                    <MudDateRangePicker DateRange="_dateRange"
+                                        PlaceholderStart="Start Date"
+                                        PlaceholderEnd="End Date"
+                                        DateRangeChanged="@(async range => await OnDateRangeChangedAsync(range, context))" />
+                    <MudIconButton OnClick="@(() => ClearDateFilterAsync(context))"
+                                   Icon="@Icons.Material.Filled.FilterAltOff"
+                                   Size="Size.Small" />
+                </MudStack>
+            </FilterTemplate>
+        </PropertyColumn>
+
+    </Columns>
+
+    <PagerContent>
+        <MudDataGridPager T="CrossSessionDataGridResult" />
+    </PagerContent>
+</MudDataGrid>
+
+
+
+@code {
+    private List<CrossSessionDataGridResult> Elements = new();
+    private DateRange? _dateRange { get; set; }
+
+    private FilterDefinition<CrossSessionDataGridResult>? _dateFilterDefinition;
+
+    protected override void OnInitialized()
+    {
+        _dateFilterDefinition = new FilterDefinition<CrossSessionDataGridResult>
+        {
+            FilterFunction = s =>
+            {
+                if (_dateRange?.Start is DateTime start && _dateRange?.End is DateTime end)
+                {
+                    var date = s.Date.Date;
+                    return date >= start.Date && date <= end.Date;
+                }
+                return true;
+            }
+        };
+
+        analysisContextService.Unsubscribe(AnalysisComponentType.DataGrid, UpdateGrid);
+        analysisContextService.Subscribe(AnalysisComponentType.DataGrid, UpdateGrid);
+    }
+
+    public void Dispose()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.DataGrid, UpdateGrid);
+    }
+
+    private void UpdateGrid(HashSet<AnalysisContextProperty> changedProperties)
+    {
+
+        var relevantProperties = new[]
+        {
+            AnalysisContextProperty.SessionData,
+            AnalysisContextProperty.DataGridType,
+            AnalysisContextProperty.StartDate,
+            AnalysisContextProperty.EndDate
+        };
+
+        // Only update if relevant properties changed
+        if (!changedProperties.Any(relevantProperties.Contains))
+            return;
+
+        Elements = GetSessionDataGridResults();
+        StateHasChanged();
+    }
+
+    private async Task OnDateRangeChangedAsync(DateRange? newRange, FilterContext<CrossSessionDataGridResult> context)
+    {
+        _dateRange = newRange;
+
+        if (context != null && _dateFilterDefinition != null)
+        {
+            await context.Actions.ApplyFilterAsync(_dateFilterDefinition);
+        }
+    }
+
+    private async Task ClearDateFilterAsync(FilterContext<CrossSessionDataGridResult> context)
+    {
+        if (context is null || _dateFilterDefinition is null)
+            return;
+
+        _dateRange = null;
+        await context.Actions.ClearFilterAsync(_dateFilterDefinition);
+    }
+
+    private async Task ApplyDateFilterAsync(FilterContext<CrossSessionDataGridResult> context)
+    {
+        if (context is null || _dateFilterDefinition is null)
+            return;
+
+        await context.Actions.ApplyFilterAsync(_dateFilterDefinition);
+    }
+
+
+    private List<CrossSessionDataGridResult> GetSessionDataGridResults()
+    {
+
+        var sessionData = analysisContextService.GetSessionData();
+        var filteredSessions = AnalyseCrossSessions.GetCrossSessionTimes(sessionData, DateTime.MinValue, DateTime.MaxValue);
+
+        var results = filteredSessions
+            .Select((r, index) => new CrossSessionDataGridResult
+            {
+                SolveNumber = index + 1,
+                Time = r.Time,
+                Scramble = r.Scramble,
+                Date = r.DateTime,
+            })
+            .ToList();
+
+
+        return results;
+    }
+
+}

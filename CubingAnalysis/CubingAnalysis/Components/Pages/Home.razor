@@ -1,7 +1,214 @@
 ﻿@page "/"
-@using CubingAnalysis.Components.Controls
+@using CubingAnalysis.Core.Models.Analysis
+@using CubingAnalysis.UI.Components.Controls
+@using CubingAnalysis.Core.Models.Config
+@using CubingAnalysis.Core.Models.Parsing
+@using CubingAnalysis.Core.Services
+@inject AnalysisContextService analysisContextService
 
-<div>
-	<PageTitle>Home</PageTitle>
-	<FileUpload />
+<PageTitle>Home</PageTitle>
+
+<div style="margin: 10px 15px 15px 15px;">
+
+    <CsTimerFileUpload @bind-IsLoading="_isLoading" />
+
+    <MudDivider Style="margin-top: 10px; margin-bottom: 10px;"/>
+
+    <MudStack Row="true" Spacing="2" Breakpoint="Breakpoint.MdAndDown">
+
+        <MudDateRangePicker @bind-DateRange="_dateRange"
+                            PlaceholderStart="Start Date"
+                            PlaceholderEnd="End Date"
+                            Variant="Variant.Outlined"
+                            Clearable="true"
+                            Label="Date Range" />
+        
+        <MudSelect T="AnalysisChartType"
+                   @bind-Value="_analysisChartType"
+                   Variant="Variant.Outlined"
+                   Label="Chart Type"
+                   Modal="true">
+            @foreach (var enumMember in Enum.GetValues<AnalysisChartType>())
+            {
+                <MudSelectItem Value="enumMember">@enumMember</MudSelectItem>
+            }
+        </MudSelect>
+
+        @if (_analysisChartType == AnalysisChartType.Chunked)
+        {
+            <MudNumericField @bind-Value="_chunkSize"
+                             Label="Chunk Size"
+                             Variant="Variant.Outlined"
+                             Min="0" />
+        }
+        
+        @if (_analysisChartType == AnalysisChartType.Sessions)
+        {
+            <MudSelect T="GroupingPeriod"
+                       @bind-Value="_groupingPeriod"
+                       Variant="Variant.Outlined"
+                       Label="Grouping Period"
+                       Modal="true">
+                @foreach (var enumMember in Enum.GetValues<GroupingPeriod>())
+                {
+                    <MudSelectItem Value="enumMember">@enumMember</MudSelectItem>
+                }
+            </MudSelect>
+        }
+
+        @if (_analysisChartType == AnalysisChartType.SubX)
+        {
+            <MudNumericField @bind-Value="_chartSubX"
+                             Label="Sub X"
+                             Variant="Variant.Outlined"
+                             Min="0"
+                             Step="0.1"/>
+        }
+    
+        @if (_analysisChartType == AnalysisChartType.Average
+            || _analysisChartType == AnalysisChartType.SubX)
+        {
+            <MudNumericField @bind-Value="_minimumSessionResults"
+                             Label="Minimum Session Solve Count"
+                             Variant="Variant.Outlined"
+                             Min="0" />
+        }
+
+        <MudButton Style="margin-top: 8px; margin-bottom: 4px;" 
+                   Color="Color.Primary" 
+                   Variant="Variant.Filled" 
+                   OnClick="OnChartApplyClick">
+            Apply
+        </MudButton>
+    </MudStack>
+
+    @switch (_analysisChartType)
+    {
+        case AnalysisChartType.Chunked:
+            <ChunkedChart />
+            break;
+        case AnalysisChartType.Sessions:
+            <SessionsChart />
+            break;
+        case AnalysisChartType.Average:
+            <AverageChart />
+            break;
+        case AnalysisChartType.SubX:
+            <SubXChart />
+            break;
+    }
+    
+    <MudDivider Style="margin-top: 10px; margin-bottom: 10px;" />
+    
+    <MudStack Row="true" Spacing="2" Breakpoint="Breakpoint.MdAndDown" Style="margin-bottom: 10px;">
+
+        <MudSelect T="AnalysisDataGridType"
+                   @bind-Value="_analysisDataGridType"
+                   Variant="Variant.Outlined"
+                   Label="DataGrid Type"
+                   Modal="true">
+            @foreach (var enumMember in Enum.GetValues<AnalysisDataGridType>())
+            {
+                <MudSelectItem Value="enumMember">@enumMember</MudSelectItem>
+            }
+        </MudSelect>
+
+        @if (_analysisDataGridType == AnalysisDataGridType.Sessions)
+        {
+            <MudNumericField @bind-Value="_gridSubX"
+                             Label="Sub X"
+                             Variant="Variant.Outlined"
+                             Min="0"
+                             Step="0.1" />
+        }
+
+        <MudButton Style="margin-top: 8px; margin-bottom: 4px;"
+                   Color="Color.Primary"
+                   Variant="Variant.Filled"
+                   OnClick="OnDataGridApplyClick">
+            Apply
+        </MudButton>
+
+    </MudStack>
+
+    @switch (_analysisDataGridType)
+    {
+        case AnalysisDataGridType.Sessions:
+            <SessionsDataGrid />
+            break;
+        case AnalysisDataGridType.CrossSessionTimes:
+            <CrossSessionResultsDataGrid />
+            break;
+    }
 </div>
+
+
+@code {
+    private bool _isLoading = false;
+
+    private AnalysisDataGridType _analysisDataGridType
+    {
+        get => analysisContextService.GetDataGridType();
+        set => analysisContextService.SetDataGridType(value);
+    }
+
+    private int _minimumSessionResults
+    {
+        get => analysisContextService.GetMininmumSessionResults();
+        set => analysisContextService.SetMininmumSessionResults(value);
+    }
+
+    private double _chartSubX
+    {
+        get => analysisContextService.GetChartSubX();
+        set => analysisContextService.SetChartSubX(Math.Round(value, 1));
+    }
+
+    private double _gridSubX
+    {
+        get => analysisContextService.GetGridSubX();
+        set => analysisContextService.SetGridSubX(Math.Round(value, 1));
+    }
+
+    private AnalysisChartType _analysisChartType
+    {
+        get => analysisContextService.GetChartType();
+        set => analysisContextService.SetChartType(value);
+    }
+
+    private GroupingPeriod _groupingPeriod
+    {
+        get => analysisContextService.GetSessionGroupingPeriod();
+        set => analysisContextService.SetSessionGroupingPeriod(value);
+    }
+
+    private DateRange _dateRange
+    { 
+        get
+        {
+            var start = analysisContextService.GetStartDate();
+            var end = analysisContextService.GetEndDate();
+            return new DateRange(start, end);
+        }
+        set {
+            analysisContextService.SetStartDate(value.Start);
+            analysisContextService.SetEndDate(value.End);
+        }
+    }
+
+    private int _chunkSize
+    {
+        get => analysisContextService.GetChunkSize();
+        set => analysisContextService.SetChunkSize(value);
+    }
+
+    private void OnChartApplyClick()
+    {
+        analysisContextService.Commit(AnalysisComponentType.Chart);
+    }
+
+    private void OnDataGridApplyClick()
+    {
+        analysisContextService.Commit(AnalysisComponentType.DataGrid);
+    }
+}

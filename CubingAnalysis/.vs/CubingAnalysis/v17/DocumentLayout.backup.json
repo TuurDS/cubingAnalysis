@@ -1,12 +1,364 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\controls\\crosssessionresultsdatagrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\controls\\crosssessionresultsdatagrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\controls\\chunkedchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\controls\\chunkedchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\analysis\\crosssessiondatagridresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\analysis\\crosssessiondatagridresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\utilities\\analysesessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\utilities\\analysesessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\parsing\\sessionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\parsing\\sessionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\controls\\sessionsdatagrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\controls\\sessionsdatagrid.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\services\\analysiscontextservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\services\\analysiscontextservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\controls\\averagechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\controls\\averagechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\config\\analysiscontextproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\config\\analysiscontextproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\config\\analysisdatagridtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\config\\analysisdatagridtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\config\\analysiscomponenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\config\\analysiscomponenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\controls\\subxchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\controls\\subxchart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\components\\controls\\sessionschart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\components\\controls\\sessionschart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\utilities\\analysecrosssessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\utilities\\analysecrosssessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2884972A-833F-4CD2-9869-9D91F723C437}|CubingAnalysis\\CubingAnalysis.UI.csproj|solutionrelative:cubinganalysis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\analysis\\sessionanalysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\analysis\\sessionanalysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\utilities\\analysedate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\utilities\\analysedate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\analysis\\dateanalysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\analysis\\dateanalysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|c:\\users\\tuur\\projects\\cubinganalysis\\cubinganalysis\\cubinganalysis.core\\models\\analysis\\chunkedaverageanalysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}|CubingAnalysis.Core\\CubingAnalysis.Core.csproj|solutionrelative:cubinganalysis.core\\models\\analysis\\chunkedaverageanalysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 323,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CrossSessionDataGridResult.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\CrossSessionDataGridResult.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Analysis\\CrossSessionDataGridResult.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\CrossSessionDataGridResult.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Analysis\\CrossSessionDataGridResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T00:07:52.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubXChart.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\SubXChart.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Controls\\SubXChart.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\SubXChart.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Controls\\SubXChart.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T21:35:22.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnalysisComponentType.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Config\\AnalysisComponentType.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Config\\AnalysisComponentType.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Config\\AnalysisComponentType.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Config\\AnalysisComponentType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:30:31.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AnalyseCrossSessions.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Utilities\\AnalyseCrossSessions.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Utilities\\AnalyseCrossSessions.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Utilities\\AnalyseCrossSessions.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Utilities\\AnalyseCrossSessions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:12:37.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DateAnalysisResult.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\DateAnalysisResult.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Analysis\\DateAnalysisResult.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\DateAnalysisResult.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Analysis\\DateAnalysisResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:12:23.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionsDataGrid.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\SessionsDataGrid.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Controls\\SessionsDataGrid.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\SessionsDataGrid.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Controls\\SessionsDataGrid.razor",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAuwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T17:15:57.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAuwGsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T05:28:13.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnalysisContextService.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Services\\AnalysisContextService.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Services\\AnalysisContextService.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Services\\AnalysisContextService.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Services\\AnalysisContextService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAwwHEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:30:00.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnalyseSessions.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Utilities\\AnalyseSessions.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Utilities\\AnalyseSessions.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Utilities\\AnalyseSessions.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Utilities\\AnalyseSessions.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAhwEoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:07:27.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrossSessionResultsDataGrid.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\CrossSessionResultsDataGrid.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Controls\\CrossSessionResultsDataGrid.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\CrossSessionResultsDataGrid.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Controls\\CrossSessionResultsDataGrid.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T23:32:37.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChunkedChart.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\ChunkedChart.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Controls\\ChunkedChart.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\ChunkedChart.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Controls\\ChunkedChart.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T21:36:22.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SessionResult.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Parsing\\SessionResult.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Parsing\\SessionResult.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Parsing\\SessionResult.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Parsing\\SessionResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T00:08:50.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AverageChart.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\AverageChart.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Controls\\AverageChart.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\AverageChart.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Controls\\AverageChart.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T21:36:29.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnalysisContextProperty.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Config\\AnalysisContextProperty.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Config\\AnalysisContextProperty.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Config\\AnalysisContextProperty.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Config\\AnalysisContextProperty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T23:10:20.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AnalysisDataGridType.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Config\\AnalysisDataGridType.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Config\\AnalysisDataGridType.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Config\\AnalysisDataGridType.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Config\\AnalysisDataGridType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T23:26:02.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnalyseDate.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Utilities\\AnalyseDate.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Utilities\\AnalyseDate.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Utilities\\AnalyseDate.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Utilities\\AnalyseDate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:12:36.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Program.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Program.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Program.cs",
+              "RelativeToolTip": "CubingAnalysis\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:34:36.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SessionsChart.razor",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\SessionsChart.razor",
+              "RelativeDocumentMoniker": "CubingAnalysis\\Components\\Controls\\SessionsChart.razor",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis\\Components\\Controls\\SessionsChart.razor",
+              "RelativeToolTip": "CubingAnalysis\\Components\\Controls\\SessionsChart.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T21:35:03.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SessionAnalysisResult.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\SessionAnalysisResult.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Analysis\\SessionAnalysisResult.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\SessionAnalysisResult.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Analysis\\SessionAnalysisResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T21:12:25.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChunkedAverageAnalysisResult.cs",
+              "DocumentMoniker": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\ChunkedAverageAnalysisResult.cs",
+              "RelativeDocumentMoniker": "CubingAnalysis.Core\\Models\\Analysis\\ChunkedAverageAnalysisResult.cs",
+              "ToolTip": "C:\\Users\\Tuur\\projects\\cubingAnalysis\\CubingAnalysis\\CubingAnalysis.Core\\Models\\Analysis\\ChunkedAverageAnalysisResult.cs",
+              "RelativeToolTip": "CubingAnalysis.Core\\Models\\Analysis\\ChunkedAverageAnalysisResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T20:49:49.726Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

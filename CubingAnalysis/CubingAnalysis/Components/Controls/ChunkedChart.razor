@@ -1,0 +1,88 @@
+﻿@using CubingAnalysis.Core.Models.Config
+@using CubingAnalysis.Core.Models.Parsing
+@inject AnalysisContextService analysisContextService
+
+<MudStack AlignItems="AlignItems.Center">
+    <MudChart ChartType="ChartType.Line"
+                ChartSeries="@_timeSeries"
+                XAxisLabels="@_xAxisLabels"
+                ChartOptions="@_options"
+                CanHideSeries="true"
+                AxisChartOptions="@_axisChartOptions"
+                Width="90%"
+                Style="align-items: center;">
+    </MudChart>
+</MudStack>
+
+
+@code {
+    private ChartOptions _options = new ChartOptions()
+    {
+        YAxisTicks = 1,
+        YAxisLines = true,
+        XAxisLines = true,
+        LineStrokeWidth = 1,
+        YAxisRequireZeroPoint = false,
+        
+    };
+    private AxisChartOptions _axisChartOptions = new()
+    {
+        MatchBoundsToSize = true,
+    };
+
+    private List<ChartSeries> _timeSeries = new List<ChartSeries>();
+    private string[] _xAxisLabels = Array.Empty<string>();
+
+    protected override void OnInitialized()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.Chart, UpdateChart);
+        analysisContextService.Subscribe(AnalysisComponentType.Chart, UpdateChart);
+    }
+
+    public void Dispose()
+    {
+        analysisContextService.Unsubscribe(AnalysisComponentType.Chart, UpdateChart);
+    }
+
+
+    private void UpdateChart(HashSet<AnalysisContextProperty> changedProperties)
+    {
+        var relevantProperties = new[]
+        {
+            AnalysisContextProperty.SessionData,
+            AnalysisContextProperty.ChartType,
+            AnalysisContextProperty.StartDate,
+            AnalysisContextProperty.EndDate,
+            AnalysisContextProperty.ChunkSize,
+        };
+
+        // Only update if relevant properties changed
+        if (!changedProperties.Any(relevantProperties.Contains))
+            return;
+
+        // Get current sessions and chunk size from the service
+        var sessions = analysisContextService.GetSessionData();
+        var startDate = analysisContextService.GetStartDate();
+        var endDate = analysisContextService.GetEndDate();
+        var chunkSize = analysisContextService.GetChunkSize();
+        
+        // Compute chunked averages
+        var chunkedAverages = AnalyseCrossSessions.GetChunkedCrossSessionAverages(sessions, chunkSize, startDate, endDate);
+
+        // Determine how many labels to show
+        int stringCount = (chunkedAverages.Count % 2 == 0) ? 4 : 5;
+        _xAxisLabels = Helpers.GetLimitedLabels(chunkedAverages, stringCount, c => c.CountSoFar.ToString());
+
+        _timeSeries = new List<ChartSeries>()
+        {
+            new ChartSeries() {
+                Index = 0, 
+                Name = $"Chunked Average ({chunkSize} results per chunk)", 
+                Data = chunkedAverages.Select(c => c.Average).ToArray() 
+            }
+        };
+
+        StateHasChanged(); // Force chart to re-render
+    }
+
+}

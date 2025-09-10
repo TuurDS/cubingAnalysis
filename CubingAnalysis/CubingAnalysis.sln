@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubingAnalysis", "CubingAnalysis\CubingAnalysis.csproj", "{2884972A-833F-4CD2-9869-9D91F723C437}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubingAnalysis.UI", "CubingAnalysis\CubingAnalysis.UI.csproj", "{2884972A-833F-4CD2-9869-9D91F723C437}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubingAnalysis.Core", "CubingAnalysis.Core\CubingAnalysis.Core.csproj", "{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubingAnalysis.Generators", "CubingAnalysis.Generators\CubingAnalysis.Generators.csproj", "{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test2", "Test2\Test2.csproj", "{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,30 @@ Global
 		{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}.Release|x64.Build.0 = Release|Any CPU
 		{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}.Release|x86.ActiveCfg = Release|Any CPU
 		{A02CD6D7-EEF1-4E91-80C8-00352DE69C33}.Release|x86.Build.0 = Release|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Debug|x64.Build.0 = Debug|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Debug|x86.Build.0 = Debug|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Release|x64.ActiveCfg = Release|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Release|x64.Build.0 = Release|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Release|x86.ActiveCfg = Release|Any CPU
+		{303D68F5-6CCD-433C-B3B7-8965E5E5DA9E}.Release|x86.Build.0 = Release|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Debug|x64.Build.0 = Debug|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Debug|x86.Build.0 = Debug|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Release|x64.ActiveCfg = Release|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Release|x64.Build.0 = Release|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D6ACD4F-2947-4759-972F-D2FA3A47CAC9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

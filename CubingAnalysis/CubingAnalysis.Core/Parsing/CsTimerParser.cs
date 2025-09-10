@@ -1,5 +1,4 @@
-﻿
-using CubingAnalysis.Core.Models;
+﻿using CubingAnalysis.Core.Models.Parsing;
 using System.Text.Json;
 
 namespace CubingAnalysis.Core.Parsing;
@@ -34,7 +33,7 @@ static public class CsTimerParser
             {
                 if (!p.Value.TryGetProperty("opt", out var opt))
                     return true; // keep if "opt" does not exist
-
+                 
                 if (!opt.TryGetProperty("scrType", out var scrType))
                     return true; // keep if "scrType" does not exist
 
@@ -58,16 +57,18 @@ static public class CsTimerParser
                         // parse the Session object from the json session
                         return new Session
                         {
-                            Results = [.. sessionArray.EnumerateArray()
+                            Name = p.Value.GetProperty("name").GetString()!,
+                            Results = sessionArray.EnumerateArray()
                                 .Select(item =>
                                 {
-                                    return new Result
+                                    return new SessionResult
                                     {
-                                        Time = (int) Math.Round(item[0][1].GetDouble()),
+                                        Time = item[0][1].GetDouble() / 1000,
                                         Scramble = item[1].GetString()!,
                                         Date = (long) Math.Round(item[3].GetDouble())
                                     };
-                                })]
+                                })
+                                .ToList()
                         };
                     }
 
@@ -79,6 +80,7 @@ static public class CsTimerParser
                 }
             })
             .Where(x => x != null) // filter out missing sessions
+            .OrderBy(s => s!.GetSessionStartDate())
             .ToList()!;
 
         return sessions;
